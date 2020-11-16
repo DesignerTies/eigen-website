@@ -15,45 +15,40 @@ body {
 }
 
 header {
-    display: flex;
-    background: #fff;
-    width: 90%;
+    position: sticky;
+    top: 0px;
+    height: 5vh;
+    width: 50%;
     margin: auto;
-    height: 10vh;
-    align-items: center;
-}
-
-#tieshoenderdos {
-    color: black;
-    display: flex;
-    flex: 1;
-    font-weight: bold;
-    font-family: 'Inconsolata';
-    margin: 5px;
-}
-
-#tieshoenderdos:hover {
-	text-decoration: underline;
 }
 
 nav {
-    flex: 2;
-}
-
-.nav-links {
+    min-height: 5vh;
+    margin: auto;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content:  space-between;
+}
+
+nav h1, nav ul {
+    font-size: 1.3rem;
+    flex: 0.4;
+}
+
+nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.nav-link {
-    font-family: 'Inconsolata';
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
+nav a {
+    color: #f5f5f7;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
 }
 
-.nav-link:hover {
+a:hover {
     text-decoration: underline;
 }
 
