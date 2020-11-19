@@ -165,7 +165,7 @@ a:hover {
     }
 }
 
-#services { 
+#services-container1 { 
     background-color: whitesmoke;
     width: 100%;
     height: 100vh;
@@ -197,6 +197,23 @@ a:hover {
 
 #tekst-foto-services.is--entered {
     animation: fade-in ease-in 1s;
+}
+
+#services-container1 h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Antic Slab', serif;
+    color: rgb(40, 40, 40);
+}
+
+#services-container1 h2 p {
+
+}
+
+#services-container2 { 
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
 }
 
 @keyframes fade-in {

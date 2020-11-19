@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
 
@@ -81,7 +83,7 @@
           stroke="white" stroke-width="2" />
       </svg>
     </div>
-    <div id="services">
+    <div id="services-container1">
       <div id="foto-services">
       </div>
       <div id="tekst-foto-services">
@@ -89,13 +91,16 @@
         <p></p>
       </div>
     </div>
+    <div id="services-container2">
+
+    </div>
   </main>
   <footer></footer>
 </body>
 <script src="js/svg.js"></script>
 <script>
 
-  var tweedeElement = document.querySelector(".services");
+  var tweedeElement = document.querySelector("#services-container1");
   var witNav = tweedeElement.offsetTop;
 
   window.onscroll = function () { scrollFunction() };
@@ -103,7 +108,7 @@
 
   function scrollFunction() {
     if (window.pageYOffset >= witNav) {
-      document.getElementById("header").style.backgroundColor = "";
+      document.getElementById("header").style.backgroundColor = "white";
       document.getElementById("h1-nav").style.color = "black";
       document.getElementById("projecten").style.color = "black";
       document.getElementById("prijzen").style.color = "black";
