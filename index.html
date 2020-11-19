@@ -2,12 +2,27 @@
 
 <head>
   <link rel="stylesheet" href="style.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.js"></script>
   <meta charset="UTF-8" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+
+    $(document).ready(function () {
+      var inview = new Waypoint.Inview({
+        element: $('#tekst-foto-services')[0],
+        enter: function (direction) {
+          $('#tekst-foto-services').addClass('is--entered')
+        },
+      })
+    });
+
+  </script>
   <title>Home</title>
 </head>
 
@@ -66,19 +81,24 @@
           stroke="white" stroke-width="2" />
       </svg>
     </div>
-    <div class="redenen">
-      
+    <div id="services">
+      <div id="foto-services">
+      </div>
+      <div id="tekst-foto-services">
+        <h2>Websites</h2>
+        <p></p>
+      </div>
     </div>
   </main>
   <footer></footer>
 </body>
-<script src="svg.js"></script>
+<script src="js/svg.js"></script>
 <script>
 
-  var tweedeElement = document.querySelector(".redenen");
+  var tweedeElement = document.querySelector(".services");
   var witNav = tweedeElement.offsetTop;
 
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function () { scrollFunction() };
 
 
   function scrollFunction() {
