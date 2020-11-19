@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
 
@@ -20,6 +22,15 @@
         element: $('#tekst-foto-services')[0],
         enter: function (direction) {
           $('#tekst-foto-services').addClass('is--entered')
+        },
+      })
+    });
+
+    $(document).ready(function () {
+      var inview = new Waypoint.Inview({
+        element: $('#tekst-redactie')[0],
+        enter: function (direction) {
+          $('#tekst-redactie').addClass('is--entered')
         },
       })
     });
@@ -87,12 +98,42 @@
       <div id="foto-services">
       </div>
       <div id="tekst-foto-services">
-        <h2>Websites</h2>
-        <p></p>
+        <h2>Websites op maat</h2>
+        <p>Ik maak voor verschillende praktijken websites op maat, hierbij kun je denken aan particuliere websites maar
+          ook aan
+          bijvoorbeeld websites voor kleine bedrijven.
+          Zulke websites kunnen kleine websites zijn van maar een of twee pagina's maar ik sluit het maken van grotere
+          websites met meer dan vijf pagina's niet uit. Alle websites die ik maak zijn volledig responsive wat betekent
+          dat ze ook goed op mobiel te gebruiken zijn.
+          U kunt navigeren naar de prijzen per website in de menu balk hierboven. Wilt u contact op nemen kunt hier ook
+          op deze manier naar navigeren.
+        </p>
       </div>
     </div>
     <div id="services-container2">
-
+      <div id="foto-services-redactie">
+      </div>
+      <div id="tekst-redactie">
+        <h2>Tekstredactie</h2>
+        <p>Als u in de knoop zit met de tekst van uw website bied ik deze service aan, waarin ik de tekst van uw
+          website maak. Dit kan in
+          combinatie met het laten maken van een website op maat
+          maar ook als u al een website heeft bied ik deze service aan. U legt simpelweg uit wat u geschreven wilt laten
+          worden en ik maak er op proffesioneel niveau een prachtig geschreven tekst van
+        </p>
+      </div>
+    </div>
+    <div id="services-container3">
+      <div id="foto-website-template">
+      </div>
+      <div id="tekst-template">
+        <h2>Website op basis van een template</h2>
+        <p>Had u een simpele maar mooie website gewild, dan zit u hier goed! Ik maak niet alleen websites op maat maar
+          ook op basis van een template die ik zelf heb gemaakt.
+          Deze template bevat een, twee of drie pagina's en bevat niet teveel gekke dingen zoals animaties. Verder is de
+          website uiteraard wel helemaal responsive en kunt u gewoon uw eigen foto's tekst, etc. toevoegen.
+        </p>
+      </div>
     </div>
   </main>
   <footer></footer>
