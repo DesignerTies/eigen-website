@@ -292,6 +292,10 @@ a:hover {
     -ms-transform: translate(-50%, -50%);
 }
 
+#tekst-template.is--entered {
+    animation: fade-in-right ease-in 2s;
+}
+
 #tekst-template h2 {
     text-align: center;
     font-family: 'Antic Slab', serif;

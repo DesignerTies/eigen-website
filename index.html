@@ -35,6 +35,16 @@
       })
     });
 
+    $(document).ready(function () {
+      var inview = new Waypoint.Inview({
+        element: $('#tekst-template')[0],
+        enter: function (direction) {
+          $('#tekst-template').addClass('is--entered')
+        },
+      })
+    });
+
+
   </script>
   <title>Home</title>
 </head>
