@@ -28,18 +28,18 @@
 
     $(document).ready(function () {
       var inview = new Waypoint.Inview({
-        element: $('#tekst-redactie')[0],
+        element: $('#tekst-template')[0],
         enter: function (direction) {
-          $('#tekst-redactie').addClass('is--entered')
+          $('#tekst-template').addClass('is--entered')
         },
       })
     });
 
     $(document).ready(function () {
       var inview = new Waypoint.Inview({
-        element: $('#tekst-template')[0],
+        element: $('#tekst-redactie')[0],
         enter: function (direction) {
-          $('#tekst-template').addClass('is--entered')
+          $('#tekst-redactie').addClass('is--entered')
         },
       })
     });
@@ -121,6 +121,18 @@
       </div>
     </div>
     <div id="services-container2">
+      <div id="foto-website-template">
+      </div>
+      <div id="tekst-template">
+        <h2>Website op basis van een template</h2>
+        <p>Had u een simpele maar mooie website gewild, dan zit u hier goed! Ik maak niet alleen websites op maat maar
+          ook op basis van een template die ik zelf heb gemaakt.
+          Deze template bevat een, twee of drie pagina's en bevat niet teveel gekke dingen zoals animaties. Verder is de
+          website uiteraard wel helemaal responsive en kunt u gewoon uw eigen foto's tekst, etc. toevoegen.
+        </p>
+      </div>
+    </div>
+    <div id="services-container3">
       <div id="foto-services-redactie">
       </div>
       <div id="tekst-redactie">
@@ -130,18 +142,6 @@
           combinatie met het laten maken van een website op maat
           maar ook als u al een website heeft bied ik deze service aan. U legt simpelweg uit wat u geschreven wilt laten
           worden en ik maak er op proffesioneel niveau een prachtig geschreven tekst van
-        </p>
-      </div>
-    </div>
-    <div id="services-container3">
-      <div id="foto-website-template">
-      </div>
-      <div id="tekst-template">
-        <h2>Website op basis van een template</h2>
-        <p>Had u een simpele maar mooie website gewild, dan zit u hier goed! Ik maak niet alleen websites op maat maar
-          ook op basis van een template die ik zelf heb gemaakt.
-          Deze template bevat een, twee of drie pagina's en bevat niet teveel gekke dingen zoals animaties. Verder is de
-          website uiteraard wel helemaal responsive en kunt u gewoon uw eigen foto's tekst, etc. toevoegen.
         </p>
       </div>
     </div>
@@ -177,3 +177,5 @@
 </script>
 
 </html>
+
+

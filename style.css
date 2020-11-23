@@ -221,8 +221,8 @@ a:hover {
     height: 100vh;
 }
 
-#foto-services-redactie {
-    background-image: url("img/redactie_goed.png");
+#foto-website-template {
+    background-image: url("img/template.png");
     background-size: cover;
     width: 450px;
     height: 450px;
@@ -233,7 +233,7 @@ a:hover {
     -ms-transform: translate(-50%, -50%);
 }
 
-#tekst-redactie { 
+#tekst-template { 
     width: 400px;
     height: 400px;
     box-shadow: 20px 20px 80px #bbbbbb;
@@ -244,17 +244,17 @@ a:hover {
     -ms-transform: translate(-50%, -50%);
 }
 
-#tekst-redactie.is--entered {
+#tekst-template.is--entered {
     animation: fade-in-left ease-in 2s;
 }
 
-#tekst-redactie h2{
+#tekst-template h2{
     font-family: 'Antic Slab', serif;
     padding-top: 10px;
     text-align: center;
 }
 
-#tekst-redactie p {
+#tekst-template p {
     font-family: 'Roboto', sans-serif;
     font-size: larger;
     padding-top: 15%;
@@ -269,8 +269,8 @@ a:hover {
     height: 75vh;
 }
 
-#foto-website-template {
-    background-image: url("img/template.png");
+#foto-services-redactie {
+    background-image: url("img/redactie_goed.png");
     height: 450px;
     width: 450px;
     position: absolute;
@@ -281,7 +281,7 @@ a:hover {
 
 }
 
-#tekst-template {
+#tekst-redactie {
     height: 400px;
     width: 400px;
     box-shadow: 20px 20px 80px #bbbbbb;
@@ -292,17 +292,17 @@ a:hover {
     -ms-transform: translate(-50%, -50%);
 }
 
-#tekst-template.is--entered {
+#tekst-redactie.is--entered {
     animation: fade-in-right ease-in 2s;
 }
 
-#tekst-template h2 {
+#tekst-redactie h2 {
     text-align: center;
     font-family: 'Antic Slab', serif;
     padding-top: 10px;
 }
 
-#tekst-template p {
+#tekst-redactie p {
     text-align: center;
     font-size: larger;
     font-family: 'Roboto', sans-serif;
