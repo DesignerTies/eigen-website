@@ -332,3 +332,117 @@ a:hover {
         -ms-transform: translate(-50%, -50%);
     }
 }
+
+footer {
+    background-color: whitesmoke;
+    margin: auto;
+    width: 100%;
+    height: 30%;
+}
+
+.footer-container {
+    border-top: 2px solid rgb(177, 176, 176);
+    position: absolute;
+    width: 80%;
+    height: 35%;
+    top: 390%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.footer-container ul {
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.footer-container ul li {
+    font-size: 1.3rem;
+    padding: 50px 100px;
+}
+
+.form {
+    background-color: black;
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.form p {
+    color: white;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.github-footer {
+    background-color: black;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.github-footer p {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.insta-footer {
+    background-color: black;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.insta-footer p {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/*header {
+    position: sticky;
+    top: 0px;
+    height: 5vh;
+    width: 50%;
+    margin: auto;
+    z-index: 1;
+}
+
+nav {
+    min-height: 5vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+
+nav h1, nav ul {
+    font-size: 1.3rem;
+    flex: 0.9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: #f5f5f7;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+} */
