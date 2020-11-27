@@ -196,7 +196,7 @@ a:hover {
 }
 
 #tekst-foto-services.is--entered {
-    animation: fade-in-right ease-in 2s;
+    animation: fade-in-right ease-in 1.5s;
 }
 
 #services-container1 h2 {
@@ -245,7 +245,7 @@ a:hover {
 }
 
 #tekst-template.is--entered {
-    animation: fade-in-left ease-in 2s;
+    animation: fade-in-left ease-in 1.5s;
 }
 
 #tekst-template h2{
@@ -293,7 +293,7 @@ a:hover {
 }
 
 #tekst-redactie.is--entered {
-    animation: fade-in-right ease-in 2s;
+    animation: fade-in-right ease-in 1.5s;
 }
 
 #tekst-redactie h2 {
