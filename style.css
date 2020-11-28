@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+input, select {
+    vertical-align:middle;
+}
+
 a {
     text-decoration: none;
 }
@@ -370,6 +374,11 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+form {
+    height: 10%;
+    align-items: center;
 }
 
 .form p {
