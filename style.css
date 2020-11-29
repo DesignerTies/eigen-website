@@ -366,7 +366,7 @@ footer {
 }
 
 .form {
-    background-color: black;
+    align-items: center;
     position: absolute;
     height: 80%;
     width: 40%;
@@ -377,18 +377,33 @@ footer {
 }
 
 form {
+    text-align: center;
+    display: table;
     height: 10%;
     align-items: center;
+    align-items: center;
+    position: absolute;
+    height: 80%;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .form p {
+    text-align: center;
     color: white;
     padding-top: 100px;
+}
+
+.form input {
     text-align: center;
 }
 
 .github-footer {
-    background-color: black;
+    background-image: url("img/github_logo.png");
+    background-size: cover;
     position: absolute;
     width: 75px;
     height: 75px;
@@ -398,14 +413,9 @@ form {
     -ms-transform: translate(-50%, -50%);
 }
 
-.github-footer p {
-    color: white;
-    padding-top: 20px;
-    text-align: center;
-}
-
 .insta-footer {
-    background-color: black;
+    background-image: url("img/inata_ultiem.png");
+    background-size: cover;
     position: absolute;
     width: 75px;
     height: 75px;
@@ -413,12 +423,6 @@ form {
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-.insta-footer p {
-    color: white;
-    padding-top: 20px;
-    text-align: center;
 }
 
 /*header {
