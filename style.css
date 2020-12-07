@@ -362,7 +362,8 @@ footer {
 
 .footer-container ul li {
     font-size: 1.3rem;
-    padding: 50px 100px;
+    padding: 55px 100px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form {
@@ -370,7 +371,7 @@ footer {
     position: absolute;
     height: 80%;
     width: 40%;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
