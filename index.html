@@ -37,13 +37,21 @@
 
     $(document).ready(function () {
       var inview = new Waypoint.Inview({
+        element: $('#hosting-service')[0],
+        enter: function (direction) {
+          $('#hosting-service').addClass('is--entered')
+        },
+      })
+    });
+
+    $(document).ready(function () {
+      var inview = new Waypoint.Inview({
         element: $('#tekst-redactie')[0],
         enter: function (direction) {
           $('#tekst-redactie').addClass('is--entered')
         },
       })
     });
-
 
   </script>
   <title>Home</title>
@@ -133,6 +141,15 @@
       </div>
     </div>
     <div id="services-container3">
+      <div id="foto-hosting-service">
+      </div>
+      <div id="hosting-service">
+        <h2>Website hosting</h2>
+        <p>Aan alleen een website heeft u uiteraard niet genoeg, u wilt natuurlijk dat deze website gezien wodt. Dit doet u door hem online te zetten, u kunt zelf een zogeheten hosting bedrijf zoeken maar ik doe het ook met liefde voor u. Zodra dit gedaan is heeft u zelf volledige controle hierover, u kunt in het dashboard alle verschillende instellingen aanpassen die u maar wilt.
+        </p>
+      </div>
+    </div>
+    <div id="services-container4">
       <div id="foto-services-redactie">
       </div>
       <div id="tekst-redactie">

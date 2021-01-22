@@ -1,429 +1,477 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-input, select {
-    vertical-align:middle;
+input,
+select {
+  vertical-align: middle;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background-color: rgb(20, 20, 20);
-    width: 100%;
+  background-color: rgb(20, 20, 20);
+  width: 100%;
 }
 
 header {
-    position: sticky;
-    top: 0px;
-    height: 5vh;
-    width: 50%;
-    margin: auto;
-    z-index: 1;
+  position: sticky;
+  top: 0px;
+  height: 5vh;
+  width: 50%;
+  margin: auto;
+  z-index: 1;
 }
 
 nav {
-    min-height: 5vh;
-    margin: auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content:  space-between;
+  min-height: 5vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-nav h1, nav ul {
-    font-size: 1.3rem;
-    flex: 0.9;
+nav h1,
+nav ul {
+  font-size: 1.3rem;
+  flex: 0.9;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 nav a {
-    color: #f5f5f7;
-    font-family: 'Rubik', sans-serif;
-    text-decoration: none;
+  color: #f5f5f7;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .container-svg {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 #logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    animation: fill 0.5s ease forwards 4.8s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 4.8s;
 }
 
 #logo path:nth-child(1) {
-    stroke-dasharray: 163;
-    stroke-dashoffset: 163;
-    animation: line-anim 2s ease forwards;
+  stroke-dasharray: 163;
+  stroke-dashoffset: 163;
+  animation: line-anim 2s ease forwards;
 }
 
 #logo path:nth-child(2) {
-    stroke-dasharray: 109;
-    stroke-dashoffset: 109;
-    animation: line-anim 2s ease forwards 0.3s;
+  stroke-dasharray: 109;
+  stroke-dashoffset: 109;
+  animation: line-anim 2s ease forwards 0.3s;
 }
 
 #logo path:nth-child(3) {
-    stroke-dasharray: 187;
-    stroke-dashoffset: 187;
-    animation: line-anim 2s ease forwards 0.6s;
+  stroke-dasharray: 187;
+  stroke-dashoffset: 187;
+  animation: line-anim 2s ease forwards 0.6s;
 }
 
 #logo path:nth-child(4) {
-    stroke-dasharray: 180;
-    stroke-dashoffset: 180;
-    animation: line-anim 2s ease forwards 0.9s;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: line-anim 2s ease forwards 0.9s;
 }
 
 #logo path:nth-child(5) {
-    stroke-dasharray: 241;
-    stroke-dashoffset: 241;
-    animation: line-anim 2s ease forwards 1.2s;
+  stroke-dasharray: 241;
+  stroke-dashoffset: 241;
+  animation: line-anim 2s ease forwards 1.2s;
 }
 
 #logo path:nth-child(6) {
-    stroke-dasharray: 169;
-    stroke-dashoffset: 169;
-    animation: line-anim 2s ease forwards 1.5s;
+  stroke-dasharray: 169;
+  stroke-dashoffset: 169;
+  animation: line-anim 2s ease forwards 1.5s;
 }
 
 #logo path:nth-child(7) {
-    stroke-dasharray: 187;
-    stroke-dashoffset: 187;
-    animation: line-anim 2s ease forwards 1.8s;
+  stroke-dasharray: 187;
+  stroke-dashoffset: 187;
+  animation: line-anim 2s ease forwards 1.8s;
 }
 
 #logo path:nth-child(8) {
-    stroke-dasharray: 176;
-    stroke-dashoffset: 176;
-    animation: line-anim 2s ease forwards 2.1s
+  stroke-dasharray: 176;
+  stroke-dashoffset: 176;
+  animation: line-anim 2s ease forwards 2.1s;
 }
 
 #logo path:nth-child(9) {
-    stroke-dasharray: 214;
-    stroke-dashoffset: 214;
-    animation: line-anim 2s ease forwards 2.4s;
+  stroke-dasharray: 214;
+  stroke-dashoffset: 214;
+  animation: line-anim 2s ease forwards 2.4s;
 }
 
 #logo path:nth-child(10) {
-    stroke-dasharray: 187;
-    stroke-dashoffset: 187;
-    animation: line-anim 2s ease forwards 2.7s;
+  stroke-dasharray: 187;
+  stroke-dashoffset: 187;
+  animation: line-anim 2s ease forwards 2.7s;
 }
 
 #logo path:nth-child(11) {
-    stroke-dasharray: 106;
-    stroke-dashoffset: 106;
-    animation: line-anim 2s ease forwards 3.0s;
+  stroke-dasharray: 106;
+  stroke-dashoffset: 106;
+  animation: line-anim 2s ease forwards 3s;
 }
 
 #logo path:nth-child(12) {
-    stroke-dasharray: 214;
-    stroke-dashoffset: 214;
-    animation: line-anim 2s ease forwards 3.3s;
+  stroke-dasharray: 214;
+  stroke-dashoffset: 214;
+  animation: line-anim 2s ease forwards 3.3s;
 }
 
 #logo path:nth-child(13) {
-    stroke-dasharray: 169;
-    stroke-dashoffset: 169;
-    animation: line-anim 2s ease forwards 3.6s;
+  stroke-dasharray: 169;
+  stroke-dashoffset: 169;
+  animation: line-anim 2s ease forwards 3.6s;
 }
 
 #logo path:nth-child(14) {
-    stroke-dasharray: 180;
-    stroke-dashoffset: 180;
-    animation: line-anim 2s ease forwards 3.9s;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: line-anim 2s ease forwards 3.9s;
 }
 
 @keyframes line-anim {
-    to {
-        stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes fill {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: white;
-    }
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
 }
 
-#services-container1 { 
-    background-color: whitesmoke;
-    width: 100%;
-    height: 100vh;
+#services-container1 {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
 }
 
 #foto-services {
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F391%2F221%2Foriginal%2Fvector-icon-of-computer-laptop-icon.jpg&f=1&nofb=1");
-    background-size: cover;
-    width: 450px;
-    height: 450px;
-    /*box-shadow: 20px 20px 80px #bbbbbb;*/
-    position: absolute;
-    top: 150%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F391%2F221%2Foriginal%2Fvector-icon-of-computer-laptop-icon.jpg&f=1&nofb=1");
+  background-size: cover;
+  width: 450px;
+  height: 450px;
+  /*box-shadow: 20px 20px 80px #bbbbbb;*/
+  position: absolute;
+  top: 150%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #tekst-foto-services {
-    width: 400px;
-    height: 400px;
-    box-shadow: 20px 20px 80px #bbbbbb;
-    position: absolute;
-    top: 150%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  box-shadow: 20px 20px 80px #bbbbbb;
+  position: absolute;
+  top: 150%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #tekst-foto-services.is--entered {
-    animation: fade-in-right ease-in 1.5s;
+  animation: fade-in-right ease-in 1.5s;
 }
 
 #services-container1 h2 {
-    padding-top: 10px;
-    text-align: center;
-    font-family: 'Antic Slab', serif;
-    color: rgb(40, 40, 40);
+  padding-top: 10px;
+  text-align: center;
+  font-family: "Antic Slab", serif;
+  color: rgb(40, 40, 40);
 }
 
 #services-container1 p {
-    text-align: center;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-top: 20px;
-    font-size: larger;
-    font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 20px;
+  font-size: larger;
+  font-family: "Roboto", sans-serif;
 }
 
-#services-container2 { 
-    background-color: whitesmoke;
-    width: 100%;
-    height: 100vh;
+#services-container2 {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100vh;
 }
 
 #foto-website-template {
-    background-image: url("img/template.png");
-    background-size: cover;
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    top: 230%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  background-image: url("img/template.png");
+  background-size: cover;
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top: 230%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-#tekst-template { 
-    width: 400px;
-    height: 400px;
-    box-shadow: 20px 20px 80px #bbbbbb;
-    position: absolute;
-    top: 230%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+#tekst-template {
+  width: 400px;
+  height: 400px;
+  box-shadow: 20px 20px 80px #bbbbbb;
+  position: absolute;
+  top: 230%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #tekst-template.is--entered {
-    animation: fade-in-left ease-in 1.5s;
+  animation: fade-in-left ease-in 1.5s;
 }
 
-#tekst-template h2{
-    font-family: 'Antic Slab', serif;
-    padding-top: 10px;
-    text-align: center;
+#tekst-template h2 {
+  font-family: "Antic Slab", serif;
+  padding-top: 10px;
+  text-align: center;
 }
 
 #tekst-template p {
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    padding-top: 15%;
-    padding-right: 5px;
-    padding-left: 5px;
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  padding-top: 15%;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: center;
 }
 
 #services-container3 {
-    background-color: whitesmoke;
-    width: 100%;
-    height: 75vh;
+  background-color: whitesmoke;
+  width: 100%;
+  height: 75vh;
+}
+
+#foto-hosting-service {
+  background-image: url("img/hostingpsd.png");
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  top: 310%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#hosting-service {
+  height: 400px;
+  width: 400px;
+  box-shadow: 20px 20px 80px #bbbbbb;
+  position: absolute;
+  top: 310%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#hosting-service.is--entered {
+  animation: fade-in-right ease-in 1.5s;
+}
+
+#hosting-service h2 {
+  text-align: center;
+  font-family: "Antic Slab", serif;
+  padding-top: 10px;
+}
+
+#hosting-service p {
+  text-align: center;
+  font-size: larger;
+  font-family: "Roboto", sans-serif;
+  padding-top: 15%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#services-container4 {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 75vh;
 }
 
 #foto-services-redactie {
-    background-image: url("img/redactie_goed.png");
-    height: 450px;
-    width: 450px;
-    position: absolute;
-    top: 310%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-
+  background-image: url("img/redactie_goed.png");
+  height: 450px;
+  width: 450px;
+  position: absolute;
+  top: 390%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 #tekst-redactie {
-    height: 400px;
-    width: 400px;
-    box-shadow: 20px 20px 80px #bbbbbb;
-    position: absolute;
-    top: 310%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  height: 400px;
+  width: 400px;
+  box-shadow: 20px 20px 80px #bbbbbb;
+  position: absolute;
+  top: 390%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-#tekst-redactie.is--entered {
-    animation: fade-in-right ease-in 1.5s;
+#rekst-redactie.is--entered {
+  animation: fade-in-right ease-in 1.5s;
 }
 
 #tekst-redactie h2 {
-    text-align: center;
-    font-family: 'Antic Slab', serif;
-    padding-top: 10px;
+  text-align: center;
+  font-family: "Antic Slab", serif;
+  padding-top: 10px;
 }
 
 #tekst-redactie p {
-    text-align: center;
-    font-size: larger;
-    font-family: 'Roboto', sans-serif;
-    padding-top: 15%;
-    padding-left: 5px;
-    padding-right: 5px;
+  text-align: center;
+  font-size: larger;
+  font-family: "Roboto", sans-serif;
+  padding-top: 15%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @keyframes fade-in-right {
-    0% {
-        transform: translate3d(90px, 0, 0) translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-    100% {
-        transform: none translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
+  0% {
+    transform: translate3d(90px, 0, 0) translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: none translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 }
 
 @keyframes fade-in-left {
-    0% {
-        transform: translate3d(-90px, 0, 0) translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
-    100% {
-        transform: none translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-    }
+  0% {
+    transform: translate3d(-90px, 0, 0) translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: none translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 }
 
 footer {
-    background-color: whitesmoke;
-    margin: auto;
-    width: 100%;
-    height: 30%;
+  background-color: whitesmoke;
+  margin: auto;
+  width: 100%;
+  height: 40%;
 }
 
 .footer-container {
-    border-top: 2px solid rgb(177, 176, 176);
-    position: absolute;
-    width: 80%;
-    height: 35%;
-    top: 390%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  border-top: 2px solid rgb(177, 176, 176);
+  position: absolute;
+  width: 80%;
+  height: 35%;
+  top: 470%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .footer-container ul {
-    list-style: none;
-    justify-content: space-evenly;
+  list-style: none;
+  justify-content: space-evenly;
 }
 
 .footer-container ul li {
-    font-size: 1.3rem;
-    padding: 55px 100px;
-    font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  padding: 55px 100px;
+  font-family: "Roboto", sans-serif;
 }
 
 .form {
-    align-items: center;
-    position: absolute;
-    height: 80%;
-    width: 40%;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  align-items: center;
+  position: absolute;
+  height: 80%;
+  width: 40%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 form {
-    text-align: center;
-    display: table;
-    height: 10%;
-    align-items: center;
-    align-items: center;
-    position: absolute;
-    height: 80%;
-    width: 40%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  display: table;
+  height: 10%;
+  align-items: center;
+  align-items: center;
+  position: absolute;
+  height: 80%;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .form p {
-    text-align: center;
-    color: white;
-    padding-top: 100px;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
 }
 
 .form input {
-    text-align: center;
+  text-align: center;
 }
 
 .github-footer {
-    background-image: url("img/github_logo.png");
-    background-size: cover;
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 30%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  background-image: url("img/github_logo.png");
+  background-size: cover;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .insta-footer {
-    background-image: url("img/inata_ultiem.png");
-    background-size: cover;
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    top: 70%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  background-image: url("img/inata_ultiem.png");
+  background-size: cover;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 /*header {
