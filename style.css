@@ -191,6 +191,7 @@ a:hover {
 }
 
 #tekst-foto-services {
+  z-index: 1;
   width: 400px;
   height: 400px;
   box-shadow: 20px 20px 80px #bbbbbb;
@@ -221,7 +222,7 @@ a:hover {
   font-family: "Roboto", sans-serif;
 }
 
-#services-container2 {
+/*#services-container2 {
   background-color: whitesmoke;
   width: 100%;
   height: 100vh;
@@ -267,7 +268,7 @@ a:hover {
   padding-right: 5px;
   padding-left: 5px;
   text-align: center;
-}
+}*/
 
 #services-container3 {
   background-color: whitesmoke;
@@ -280,25 +281,26 @@ a:hover {
   height: 450px;
   width: 450px;
   position: absolute;
-  top: 310%;
-  left: 20%;
+  top: 230%;
+  left: 70%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
 #hosting-service {
+  z-index: 1;
   height: 400px;
   width: 400px;
   box-shadow: 20px 20px 80px #bbbbbb;
   position: absolute;
-  top: 310%;
-  left: 60%;
+  top: 230%;
+  left: 30%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
 #hosting-service.is--entered {
-  animation: fade-in-right ease-in 1.5s;
+  animation: fade-in-left ease-in 1.5s;
 }
 
 #hosting-service h2 {
@@ -316,7 +318,7 @@ a:hover {
   padding-right: 5px;
 }
 
-#services-container4 {
+/*#services-container4 {
   background-color: whitesmoke;
   width: 100%;
   height: 75vh;
@@ -361,7 +363,7 @@ a:hover {
   padding-top: 15%;
   padding-left: 5px;
   padding-right: 5px;
-}
+}*/
 
 @keyframes fade-in-right {
   0% {
@@ -389,7 +391,7 @@ footer {
   background-color: whitesmoke;
   margin: auto;
   width: 100%;
-  height: 40%;
+  height: 50%;
 }
 
 .footer-container {
@@ -397,7 +399,7 @@ footer {
   position: absolute;
   width: 80%;
   height: 35%;
-  top: 470%;
+  top: 310%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

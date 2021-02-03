@@ -1,134 +1,190 @@
 <html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Website laten maken en hosten voor een voordelige prijs. Websites kunnen op maat gemaakt worden maar kunnen ook aangepast worden op basis van een template."
+    />
+    <meta
+      name="keywords"
+      content="Website, hosting, template, domeinnaam, ICTies"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      $(document).ready(function () {
+        var inview = new Waypoint.Inview({
+          element: $("#tekst-foto-services")[0],
+          enter: function (direction) {
+            $("#tekst-foto-services").addClass("is--entered");
+          },
+        });
+      });
 
-<head>
-  <link rel="stylesheet" href="style.css" />
-  <script src="js/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.js"></script>
-  <meta charset="UTF-8" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script>
+      $(document).ready(function () {
+        var inview = new Waypoint.Inview({
+          element: $("#tekst-template")[0],
+          enter: function (direction) {
+            $("#tekst-template").addClass("is--entered");
+          },
+        });
+      });
 
-    $(document).ready(function () {
-      var inview = new Waypoint.Inview({
-        element: $('#tekst-foto-services')[0],
-        enter: function (direction) {
-          $('#tekst-foto-services').addClass('is--entered')
-        },
-      })
-    });
+      $(document).ready(function () {
+        var inview = new Waypoint.Inview({
+          element: $("#hosting-service")[0],
+          enter: function (direction) {
+            $("#hosting-service").addClass("is--entered");
+          },
+        });
+      });
 
-    $(document).ready(function () {
-      var inview = new Waypoint.Inview({
-        element: $('#tekst-template')[0],
-        enter: function (direction) {
-          $('#tekst-template').addClass('is--entered')
-        },
-      })
-    });
+      $(document).ready(function () {
+        var inview = new Waypoint.Inview({
+          element: $("#tekst-redactie")[0],
+          enter: function (direction) {
+            $("#tekst-redactie").addClass("is--entered");
+          },
+        });
+      });
+    </script>
+    <title>Home</title>
+  </head>
 
-    $(document).ready(function () {
-      var inview = new Waypoint.Inview({
-        element: $('#hosting-service')[0],
-        enter: function (direction) {
-          $('#hosting-service').addClass('is--entered')
-        },
-      })
-    });
-
-    $(document).ready(function () {
-      var inview = new Waypoint.Inview({
-        element: $('#tekst-redactie')[0],
-        enter: function (direction) {
-          $('#tekst-redactie').addClass('is--entered')
-        },
-      })
-    });
-
-  </script>
-  <title>Home</title>
-</head>
-
-<body>
-  <header id="header">
-    <nav>
-      <h1><a href="#" id="h1-nav">Ties Hoenderdos</a></h1>
-      <ul class="nav-links">
-        <li><a href="#" class="nav-link" id="projecten">Projecten</a></li>
-        <li><a href="#" class="nav-link" id="prijzen">Prijzen</a></li>
-        <li><a href="#" class="nav-link" id="contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="container-svg">
-      <svg id="logo" width="485" height="49" viewBox="0 0 485 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M36.5 8.875H22.3125V48H14.4688V8.875H0.40625V2.5H36.5V8.875Z" stroke="white" stroke-width="2" />
-        <path
-          d="M49.8438 48H42.25V14.1875H49.8438V48ZM41.7812 5.40625C41.7812 4.23958 42.1458 3.27083 42.875 2.5C43.625 1.72917 44.6875 1.34375 46.0625 1.34375C47.4375 1.34375 48.5 1.72917 49.25 2.5C50 3.27083 50.375 4.23958 50.375 5.40625C50.375 6.55208 50 7.51042 49.25 8.28125C48.5 9.03125 47.4375 9.40625 46.0625 9.40625C44.6875 9.40625 43.625 9.03125 42.875 8.28125C42.1458 7.51042 41.7812 6.55208 41.7812 5.40625Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M73.0312 48.625C68.2188 48.625 64.3125 47.1146 61.3125 44.0938C58.3333 41.0521 56.8438 37.0104 56.8438 31.9688V31.0312C56.8438 27.6562 57.4896 24.6458 58.7812 22C60.0938 19.3333 61.9271 17.2604 64.2812 15.7812C66.6354 14.3021 69.2604 13.5625 72.1562 13.5625C76.7604 13.5625 80.3125 15.0312 82.8125 17.9688C85.3333 20.9062 86.5938 25.0625 86.5938 30.4375V33.5H64.5C64.7292 36.2917 65.6562 38.5 67.2812 40.125C68.9271 41.75 70.9896 42.5625 73.4688 42.5625C76.9479 42.5625 79.7812 41.1562 81.9688 38.3438L86.0625 42.25C84.7083 44.2708 82.8958 45.8438 80.625 46.9688C78.375 48.0729 75.8438 48.625 73.0312 48.625ZM72.125 19.6562C70.0417 19.6562 68.3542 20.3854 67.0625 21.8438C65.7917 23.3021 64.9792 25.3333 64.625 27.9375H79.0938V27.375C78.9271 24.8333 78.25 22.9167 77.0625 21.625C75.875 20.3125 74.2292 19.6562 72.125 19.6562Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M111.469 38.8125C111.469 37.4583 110.906 36.4271 109.781 35.7188C108.677 35.0104 106.833 34.3854 104.25 33.8438C101.667 33.3021 99.5104 32.6146 97.7812 31.7812C93.9896 29.9479 92.0938 27.2917 92.0938 23.8125C92.0938 20.8958 93.3229 18.4583 95.7812 16.5C98.2396 14.5417 101.365 13.5625 105.156 13.5625C109.198 13.5625 112.458 14.5625 114.938 16.5625C117.438 18.5625 118.688 21.1562 118.688 24.3438H111.094C111.094 22.8854 110.552 21.6771 109.469 20.7188C108.385 19.7396 106.948 19.25 105.156 19.25C103.49 19.25 102.125 19.6354 101.062 20.4062C100.021 21.1771 99.5 22.2083 99.5 23.5C99.5 24.6667 99.9896 25.5729 100.969 26.2188C101.948 26.8646 103.927 27.5208 106.906 28.1875C109.885 28.8333 112.219 29.6146 113.906 30.5312C115.615 31.4271 116.875 32.5104 117.688 33.7812C118.521 35.0521 118.938 36.5938 118.938 38.4062C118.938 41.4479 117.677 43.9167 115.156 45.8125C112.635 47.6875 109.333 48.625 105.25 48.625C102.479 48.625 100.01 48.125 97.8438 47.125C95.6771 46.125 93.9896 44.75 92.7812 43C91.5729 41.25 90.9688 39.3646 90.9688 37.3438H98.3438C98.4479 39.1354 99.125 40.5208 100.375 41.5C101.625 42.4583 103.281 42.9375 105.344 42.9375C107.344 42.9375 108.865 42.5625 109.906 41.8125C110.948 41.0417 111.469 40.0417 111.469 38.8125Z"
-          stroke="white" stroke-width="2" />
-        <path d="M178.375 48H170.5V27.7812H150.156V48H142.25V2.5H150.156V21.4375H170.5V2.5H178.375V48Z" stroke="white"
-          stroke-width="2" />
-        <path
-          d="M185.594 30.7812C185.594 27.4688 186.25 24.4896 187.562 21.8438C188.875 19.1771 190.719 17.1354 193.094 15.7188C195.469 14.2812 198.198 13.5625 201.281 13.5625C205.844 13.5625 209.542 15.0312 212.375 17.9688C215.229 20.9062 216.771 24.8021 217 29.6562L217.031 31.4375C217.031 34.7708 216.385 37.75 215.094 40.375C213.823 43 211.99 45.0312 209.594 46.4688C207.219 47.9062 204.469 48.625 201.344 48.625C196.573 48.625 192.75 47.0417 189.875 43.875C187.021 40.6875 185.594 36.4479 185.594 31.1562V30.7812ZM193.188 31.4375C193.188 34.9167 193.906 37.6458 195.344 39.625C196.781 41.5833 198.781 42.5625 201.344 42.5625C203.906 42.5625 205.896 41.5625 207.312 39.5625C208.75 37.5625 209.469 34.6354 209.469 30.7812C209.469 27.3646 208.729 24.6562 207.25 22.6562C205.792 20.6562 203.802 19.6562 201.281 19.6562C198.802 19.6562 196.833 20.6458 195.375 22.625C193.917 24.5833 193.188 27.5208 193.188 31.4375Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M238.344 48.625C233.531 48.625 229.625 47.1146 226.625 44.0938C223.646 41.0521 222.156 37.0104 222.156 31.9688V31.0312C222.156 27.6562 222.802 24.6458 224.094 22C225.406 19.3333 227.24 17.2604 229.594 15.7812C231.948 14.3021 234.573 13.5625 237.469 13.5625C242.073 13.5625 245.625 15.0312 248.125 17.9688C250.646 20.9062 251.906 25.0625 251.906 30.4375V33.5H229.812C230.042 36.2917 230.969 38.5 232.594 40.125C234.24 41.75 236.302 42.5625 238.781 42.5625C242.26 42.5625 245.094 41.1562 247.281 38.3438L251.375 42.25C250.021 44.2708 248.208 45.8438 245.938 46.9688C243.688 48.0729 241.156 48.625 238.344 48.625ZM237.438 19.6562C235.354 19.6562 233.667 20.3854 232.375 21.8438C231.104 23.3021 230.292 25.3333 229.938 27.9375H244.406V27.375C244.24 24.8333 243.562 22.9167 242.375 21.625C241.188 20.3125 239.542 19.6562 237.438 19.6562Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M264.875 14.1875L265.094 18.0938C267.594 15.0729 270.875 13.5625 274.938 13.5625C281.979 13.5625 285.562 17.5938 285.688 25.6562V48H278.094V26.0938C278.094 23.9479 277.625 22.3646 276.688 21.3438C275.771 20.3021 274.26 19.7812 272.156 19.7812C269.094 19.7812 266.812 21.1667 265.312 23.9375V48H257.719V14.1875H264.875Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M292.031 30.8438C292.031 25.6354 293.24 21.4583 295.656 18.3125C298.073 15.1458 301.312 13.5625 305.375 13.5625C308.958 13.5625 311.854 14.8125 314.062 17.3125V0H321.656V48H314.781L314.406 44.5C312.135 47.25 309.104 48.625 305.312 48.625C301.354 48.625 298.146 47.0312 295.688 43.8438C293.25 40.6562 292.031 36.3229 292.031 30.8438ZM299.625 31.5C299.625 34.9375 300.281 37.625 301.594 39.5625C302.927 41.4792 304.812 42.4375 307.25 42.4375C310.354 42.4375 312.625 41.0521 314.062 38.2812V23.8438C312.667 21.1354 310.417 19.7812 307.312 19.7812C304.854 19.7812 302.958 20.7604 301.625 22.7188C300.292 24.6562 299.625 27.5833 299.625 31.5Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M344.469 48.625C339.656 48.625 335.75 47.1146 332.75 44.0938C329.771 41.0521 328.281 37.0104 328.281 31.9688V31.0312C328.281 27.6562 328.927 24.6458 330.219 22C331.531 19.3333 333.365 17.2604 335.719 15.7812C338.073 14.3021 340.698 13.5625 343.594 13.5625C348.198 13.5625 351.75 15.0312 354.25 17.9688C356.771 20.9062 358.031 25.0625 358.031 30.4375V33.5H335.938C336.167 36.2917 337.094 38.5 338.719 40.125C340.365 41.75 342.427 42.5625 344.906 42.5625C348.385 42.5625 351.219 41.1562 353.406 38.3438L357.5 42.25C356.146 44.2708 354.333 45.8438 352.062 46.9688C349.812 48.0729 347.281 48.625 344.469 48.625ZM343.562 19.6562C341.479 19.6562 339.792 20.3854 338.5 21.8438C337.229 23.3021 336.417 25.3333 336.062 27.9375H350.531V27.375C350.365 24.8333 349.688 22.9167 348.5 21.625C347.312 20.3125 345.667 19.6562 343.562 19.6562Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M381.656 21.125C380.656 20.9583 379.625 20.875 378.562 20.875C375.083 20.875 372.74 22.2083 371.531 24.875V48H363.938V14.1875H371.188L371.375 17.9688C373.208 15.0312 375.75 13.5625 379 13.5625C380.083 13.5625 380.979 13.7083 381.688 14L381.656 21.125Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M384.406 30.8438C384.406 25.6354 385.615 21.4583 388.031 18.3125C390.448 15.1458 393.688 13.5625 397.75 13.5625C401.333 13.5625 404.229 14.8125 406.438 17.3125V0H414.031V48H407.156L406.781 44.5C404.51 47.25 401.479 48.625 397.688 48.625C393.729 48.625 390.521 47.0312 388.062 43.8438C385.625 40.6562 384.406 36.3229 384.406 30.8438ZM392 31.5C392 34.9375 392.656 37.625 393.969 39.5625C395.302 41.4792 397.188 42.4375 399.625 42.4375C402.729 42.4375 405 41.0521 406.438 38.2812V23.8438C405.042 21.1354 402.792 19.7812 399.688 19.7812C397.229 19.7812 395.333 20.7604 394 22.7188C392.667 24.6562 392 27.5833 392 31.5Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M420.531 30.7812C420.531 27.4688 421.188 24.4896 422.5 21.8438C423.812 19.1771 425.656 17.1354 428.031 15.7188C430.406 14.2812 433.135 13.5625 436.219 13.5625C440.781 13.5625 444.479 15.0312 447.312 17.9688C450.167 20.9062 451.708 24.8021 451.938 29.6562L451.969 31.4375C451.969 34.7708 451.323 37.75 450.031 40.375C448.76 43 446.927 45.0312 444.531 46.4688C442.156 47.9062 439.406 48.625 436.281 48.625C431.51 48.625 427.688 47.0417 424.812 43.875C421.958 40.6875 420.531 36.4479 420.531 31.1562V30.7812ZM428.125 31.4375C428.125 34.9167 428.844 37.6458 430.281 39.625C431.719 41.5833 433.719 42.5625 436.281 42.5625C438.844 42.5625 440.833 41.5625 442.25 39.5625C443.688 37.5625 444.406 34.6354 444.406 30.7812C444.406 27.3646 443.667 24.6562 442.188 22.6562C440.729 20.6562 438.74 19.6562 436.219 19.6562C433.74 19.6562 431.771 20.6458 430.312 22.625C428.854 24.5833 428.125 27.5208 428.125 31.4375Z"
-          stroke="white" stroke-width="2" />
-        <path
-          d="M477.344 38.8125C477.344 37.4583 476.781 36.4271 475.656 35.7188C474.552 35.0104 472.708 34.3854 470.125 33.8438C467.542 33.3021 465.385 32.6146 463.656 31.7812C459.865 29.9479 457.969 27.2917 457.969 23.8125C457.969 20.8958 459.198 18.4583 461.656 16.5C464.115 14.5417 467.24 13.5625 471.031 13.5625C475.073 13.5625 478.333 14.5625 480.812 16.5625C483.312 18.5625 484.562 21.1562 484.562 24.3438H476.969C476.969 22.8854 476.427 21.6771 475.344 20.7188C474.26 19.7396 472.823 19.25 471.031 19.25C469.365 19.25 468 19.6354 466.938 20.4062C465.896 21.1771 465.375 22.2083 465.375 23.5C465.375 24.6667 465.865 25.5729 466.844 26.2188C467.823 26.8646 469.802 27.5208 472.781 28.1875C475.76 28.8333 478.094 29.6146 479.781 30.5312C481.49 31.4271 482.75 32.5104 483.562 33.7812C484.396 35.0521 484.812 36.5938 484.812 38.4062C484.812 41.4479 483.552 43.9167 481.031 45.8125C478.51 47.6875 475.208 48.625 471.125 48.625C468.354 48.625 465.885 48.125 463.719 47.125C461.552 46.125 459.865 44.75 458.656 43C457.448 41.25 456.844 39.3646 456.844 37.3438H464.219C464.323 39.1354 465 40.5208 466.25 41.5C467.5 42.4583 469.156 42.9375 471.219 42.9375C473.219 42.9375 474.74 42.5625 475.781 41.8125C476.823 41.0417 477.344 40.0417 477.344 38.8125Z"
-          stroke="white" stroke-width="2" />
-      </svg>
-    </div>
-    <div id="services-container1">
-      <div id="foto-services">
+  <body>
+    <header id="header">
+      <nav>
+        <h1><a href="#" id="h1-nav">Ties Hoenderdos</a></h1>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link" id="projecten">Projecten</a></li>
+          <li><a href="#" class="nav-link" id="prijzen">Prijzen</a></li>
+          <li><a href="#" class="nav-link" id="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container-svg">
+        <svg
+          id="logo"
+          width="485"
+          height="49"
+          viewBox="0 0 485 49"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M36.5 8.875H22.3125V48H14.4688V8.875H0.40625V2.5H36.5V8.875Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M49.8438 48H42.25V14.1875H49.8438V48ZM41.7812 5.40625C41.7812 4.23958 42.1458 3.27083 42.875 2.5C43.625 1.72917 44.6875 1.34375 46.0625 1.34375C47.4375 1.34375 48.5 1.72917 49.25 2.5C50 3.27083 50.375 4.23958 50.375 5.40625C50.375 6.55208 50 7.51042 49.25 8.28125C48.5 9.03125 47.4375 9.40625 46.0625 9.40625C44.6875 9.40625 43.625 9.03125 42.875 8.28125C42.1458 7.51042 41.7812 6.55208 41.7812 5.40625Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M73.0312 48.625C68.2188 48.625 64.3125 47.1146 61.3125 44.0938C58.3333 41.0521 56.8438 37.0104 56.8438 31.9688V31.0312C56.8438 27.6562 57.4896 24.6458 58.7812 22C60.0938 19.3333 61.9271 17.2604 64.2812 15.7812C66.6354 14.3021 69.2604 13.5625 72.1562 13.5625C76.7604 13.5625 80.3125 15.0312 82.8125 17.9688C85.3333 20.9062 86.5938 25.0625 86.5938 30.4375V33.5H64.5C64.7292 36.2917 65.6562 38.5 67.2812 40.125C68.9271 41.75 70.9896 42.5625 73.4688 42.5625C76.9479 42.5625 79.7812 41.1562 81.9688 38.3438L86.0625 42.25C84.7083 44.2708 82.8958 45.8438 80.625 46.9688C78.375 48.0729 75.8438 48.625 73.0312 48.625ZM72.125 19.6562C70.0417 19.6562 68.3542 20.3854 67.0625 21.8438C65.7917 23.3021 64.9792 25.3333 64.625 27.9375H79.0938V27.375C78.9271 24.8333 78.25 22.9167 77.0625 21.625C75.875 20.3125 74.2292 19.6562 72.125 19.6562Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M111.469 38.8125C111.469 37.4583 110.906 36.4271 109.781 35.7188C108.677 35.0104 106.833 34.3854 104.25 33.8438C101.667 33.3021 99.5104 32.6146 97.7812 31.7812C93.9896 29.9479 92.0938 27.2917 92.0938 23.8125C92.0938 20.8958 93.3229 18.4583 95.7812 16.5C98.2396 14.5417 101.365 13.5625 105.156 13.5625C109.198 13.5625 112.458 14.5625 114.938 16.5625C117.438 18.5625 118.688 21.1562 118.688 24.3438H111.094C111.094 22.8854 110.552 21.6771 109.469 20.7188C108.385 19.7396 106.948 19.25 105.156 19.25C103.49 19.25 102.125 19.6354 101.062 20.4062C100.021 21.1771 99.5 22.2083 99.5 23.5C99.5 24.6667 99.9896 25.5729 100.969 26.2188C101.948 26.8646 103.927 27.5208 106.906 28.1875C109.885 28.8333 112.219 29.6146 113.906 30.5312C115.615 31.4271 116.875 32.5104 117.688 33.7812C118.521 35.0521 118.938 36.5938 118.938 38.4062C118.938 41.4479 117.677 43.9167 115.156 45.8125C112.635 47.6875 109.333 48.625 105.25 48.625C102.479 48.625 100.01 48.125 97.8438 47.125C95.6771 46.125 93.9896 44.75 92.7812 43C91.5729 41.25 90.9688 39.3646 90.9688 37.3438H98.3438C98.4479 39.1354 99.125 40.5208 100.375 41.5C101.625 42.4583 103.281 42.9375 105.344 42.9375C107.344 42.9375 108.865 42.5625 109.906 41.8125C110.948 41.0417 111.469 40.0417 111.469 38.8125Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M178.375 48H170.5V27.7812H150.156V48H142.25V2.5H150.156V21.4375H170.5V2.5H178.375V48Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M185.594 30.7812C185.594 27.4688 186.25 24.4896 187.562 21.8438C188.875 19.1771 190.719 17.1354 193.094 15.7188C195.469 14.2812 198.198 13.5625 201.281 13.5625C205.844 13.5625 209.542 15.0312 212.375 17.9688C215.229 20.9062 216.771 24.8021 217 29.6562L217.031 31.4375C217.031 34.7708 216.385 37.75 215.094 40.375C213.823 43 211.99 45.0312 209.594 46.4688C207.219 47.9062 204.469 48.625 201.344 48.625C196.573 48.625 192.75 47.0417 189.875 43.875C187.021 40.6875 185.594 36.4479 185.594 31.1562V30.7812ZM193.188 31.4375C193.188 34.9167 193.906 37.6458 195.344 39.625C196.781 41.5833 198.781 42.5625 201.344 42.5625C203.906 42.5625 205.896 41.5625 207.312 39.5625C208.75 37.5625 209.469 34.6354 209.469 30.7812C209.469 27.3646 208.729 24.6562 207.25 22.6562C205.792 20.6562 203.802 19.6562 201.281 19.6562C198.802 19.6562 196.833 20.6458 195.375 22.625C193.917 24.5833 193.188 27.5208 193.188 31.4375Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M238.344 48.625C233.531 48.625 229.625 47.1146 226.625 44.0938C223.646 41.0521 222.156 37.0104 222.156 31.9688V31.0312C222.156 27.6562 222.802 24.6458 224.094 22C225.406 19.3333 227.24 17.2604 229.594 15.7812C231.948 14.3021 234.573 13.5625 237.469 13.5625C242.073 13.5625 245.625 15.0312 248.125 17.9688C250.646 20.9062 251.906 25.0625 251.906 30.4375V33.5H229.812C230.042 36.2917 230.969 38.5 232.594 40.125C234.24 41.75 236.302 42.5625 238.781 42.5625C242.26 42.5625 245.094 41.1562 247.281 38.3438L251.375 42.25C250.021 44.2708 248.208 45.8438 245.938 46.9688C243.688 48.0729 241.156 48.625 238.344 48.625ZM237.438 19.6562C235.354 19.6562 233.667 20.3854 232.375 21.8438C231.104 23.3021 230.292 25.3333 229.938 27.9375H244.406V27.375C244.24 24.8333 243.562 22.9167 242.375 21.625C241.188 20.3125 239.542 19.6562 237.438 19.6562Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M264.875 14.1875L265.094 18.0938C267.594 15.0729 270.875 13.5625 274.938 13.5625C281.979 13.5625 285.562 17.5938 285.688 25.6562V48H278.094V26.0938C278.094 23.9479 277.625 22.3646 276.688 21.3438C275.771 20.3021 274.26 19.7812 272.156 19.7812C269.094 19.7812 266.812 21.1667 265.312 23.9375V48H257.719V14.1875H264.875Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M292.031 30.8438C292.031 25.6354 293.24 21.4583 295.656 18.3125C298.073 15.1458 301.312 13.5625 305.375 13.5625C308.958 13.5625 311.854 14.8125 314.062 17.3125V0H321.656V48H314.781L314.406 44.5C312.135 47.25 309.104 48.625 305.312 48.625C301.354 48.625 298.146 47.0312 295.688 43.8438C293.25 40.6562 292.031 36.3229 292.031 30.8438ZM299.625 31.5C299.625 34.9375 300.281 37.625 301.594 39.5625C302.927 41.4792 304.812 42.4375 307.25 42.4375C310.354 42.4375 312.625 41.0521 314.062 38.2812V23.8438C312.667 21.1354 310.417 19.7812 307.312 19.7812C304.854 19.7812 302.958 20.7604 301.625 22.7188C300.292 24.6562 299.625 27.5833 299.625 31.5Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M344.469 48.625C339.656 48.625 335.75 47.1146 332.75 44.0938C329.771 41.0521 328.281 37.0104 328.281 31.9688V31.0312C328.281 27.6562 328.927 24.6458 330.219 22C331.531 19.3333 333.365 17.2604 335.719 15.7812C338.073 14.3021 340.698 13.5625 343.594 13.5625C348.198 13.5625 351.75 15.0312 354.25 17.9688C356.771 20.9062 358.031 25.0625 358.031 30.4375V33.5H335.938C336.167 36.2917 337.094 38.5 338.719 40.125C340.365 41.75 342.427 42.5625 344.906 42.5625C348.385 42.5625 351.219 41.1562 353.406 38.3438L357.5 42.25C356.146 44.2708 354.333 45.8438 352.062 46.9688C349.812 48.0729 347.281 48.625 344.469 48.625ZM343.562 19.6562C341.479 19.6562 339.792 20.3854 338.5 21.8438C337.229 23.3021 336.417 25.3333 336.062 27.9375H350.531V27.375C350.365 24.8333 349.688 22.9167 348.5 21.625C347.312 20.3125 345.667 19.6562 343.562 19.6562Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M381.656 21.125C380.656 20.9583 379.625 20.875 378.562 20.875C375.083 20.875 372.74 22.2083 371.531 24.875V48H363.938V14.1875H371.188L371.375 17.9688C373.208 15.0312 375.75 13.5625 379 13.5625C380.083 13.5625 380.979 13.7083 381.688 14L381.656 21.125Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M384.406 30.8438C384.406 25.6354 385.615 21.4583 388.031 18.3125C390.448 15.1458 393.688 13.5625 397.75 13.5625C401.333 13.5625 404.229 14.8125 406.438 17.3125V0H414.031V48H407.156L406.781 44.5C404.51 47.25 401.479 48.625 397.688 48.625C393.729 48.625 390.521 47.0312 388.062 43.8438C385.625 40.6562 384.406 36.3229 384.406 30.8438ZM392 31.5C392 34.9375 392.656 37.625 393.969 39.5625C395.302 41.4792 397.188 42.4375 399.625 42.4375C402.729 42.4375 405 41.0521 406.438 38.2812V23.8438C405.042 21.1354 402.792 19.7812 399.688 19.7812C397.229 19.7812 395.333 20.7604 394 22.7188C392.667 24.6562 392 27.5833 392 31.5Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M420.531 30.7812C420.531 27.4688 421.188 24.4896 422.5 21.8438C423.812 19.1771 425.656 17.1354 428.031 15.7188C430.406 14.2812 433.135 13.5625 436.219 13.5625C440.781 13.5625 444.479 15.0312 447.312 17.9688C450.167 20.9062 451.708 24.8021 451.938 29.6562L451.969 31.4375C451.969 34.7708 451.323 37.75 450.031 40.375C448.76 43 446.927 45.0312 444.531 46.4688C442.156 47.9062 439.406 48.625 436.281 48.625C431.51 48.625 427.688 47.0417 424.812 43.875C421.958 40.6875 420.531 36.4479 420.531 31.1562V30.7812ZM428.125 31.4375C428.125 34.9167 428.844 37.6458 430.281 39.625C431.719 41.5833 433.719 42.5625 436.281 42.5625C438.844 42.5625 440.833 41.5625 442.25 39.5625C443.688 37.5625 444.406 34.6354 444.406 30.7812C444.406 27.3646 443.667 24.6562 442.188 22.6562C440.729 20.6562 438.74 19.6562 436.219 19.6562C433.74 19.6562 431.771 20.6458 430.312 22.625C428.854 24.5833 428.125 27.5208 428.125 31.4375Z"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M477.344 38.8125C477.344 37.4583 476.781 36.4271 475.656 35.7188C474.552 35.0104 472.708 34.3854 470.125 33.8438C467.542 33.3021 465.385 32.6146 463.656 31.7812C459.865 29.9479 457.969 27.2917 457.969 23.8125C457.969 20.8958 459.198 18.4583 461.656 16.5C464.115 14.5417 467.24 13.5625 471.031 13.5625C475.073 13.5625 478.333 14.5625 480.812 16.5625C483.312 18.5625 484.562 21.1562 484.562 24.3438H476.969C476.969 22.8854 476.427 21.6771 475.344 20.7188C474.26 19.7396 472.823 19.25 471.031 19.25C469.365 19.25 468 19.6354 466.938 20.4062C465.896 21.1771 465.375 22.2083 465.375 23.5C465.375 24.6667 465.865 25.5729 466.844 26.2188C467.823 26.8646 469.802 27.5208 472.781 28.1875C475.76 28.8333 478.094 29.6146 479.781 30.5312C481.49 31.4271 482.75 32.5104 483.562 33.7812C484.396 35.0521 484.812 36.5938 484.812 38.4062C484.812 41.4479 483.552 43.9167 481.031 45.8125C478.51 47.6875 475.208 48.625 471.125 48.625C468.354 48.625 465.885 48.125 463.719 47.125C461.552 46.125 459.865 44.75 458.656 43C457.448 41.25 456.844 39.3646 456.844 37.3438H464.219C464.323 39.1354 465 40.5208 466.25 41.5C467.5 42.4583 469.156 42.9375 471.219 42.9375C473.219 42.9375 474.74 42.5625 475.781 41.8125C476.823 41.0417 477.344 40.0417 477.344 38.8125Z"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
       </div>
-      <div id="tekst-foto-services">
-        <h2>Websites op maat</h2>
-        <p>Ik maak voor verschillende praktijken websites op maat, hierbij kun je denken aan particuliere websites maar
-          ook aan
-          bijvoorbeeld websites voor kleine bedrijven.
-          Zulke websites kunnen kleine websites zijn van maar een of twee pagina's maar ik sluit het maken van grotere
-          websites met meer dan vijf pagina's niet uit. Alle websites die ik maak zijn volledig responsive wat betekent
-          dat ze ook goed op mobiel te gebruiken zijn.
-          U kunt navigeren naar de prijzen per website in de menu balk hierboven. Wilt u contact op nemen kunt hier ook
-          op deze manier naar navigeren.
-        </p>
+      <div id="services-container1">
+        <div id="foto-services"></div>
+        <div id="tekst-foto-services">
+          <h2>Websites op maat</h2>
+          <p>
+            Ik maak voor verschillende praktijken websites op maat, hierbij kun
+            je denken aan particuliere websites maar ook aan bijvoorbeeld
+            websites voor kleine bedrijven. Zulke websites kunnen kleine
+            websites zijn van maar een of twee pagina's maar ik sluit het maken
+            van grotere websites met meer dan vijf pagina's niet uit. Alle
+            websites die ik maak zijn volledig responsive wat betekent dat ze
+            ook goed op mobiel te gebruiken zijn. U kunt navigeren naar de
+            prijzen per website in de menu balk hierboven. Wilt u contact op
+            nemen kunt hier ook op deze manier naar navigeren.
+          </p>
+        </div>
       </div>
-    </div>
-    <div id="services-container2">
+      <!--<div id="services-container2">
       <div id="foto-website-template">
       </div>
       <div id="tekst-template">
@@ -139,17 +195,22 @@
           website uiteraard helemaal responsive en kunt u gewoon uw eigen foto's tekst, etc. toevoegen.
         </p>
       </div>
-    </div>
-    <div id="services-container3">
-      <div id="foto-hosting-service">
+    </div>-->
+      <div id="services-container3">
+        <div id="foto-hosting-service"></div>
+        <div id="hosting-service">
+          <h2>Website hosting</h2>
+          <p>
+            Aan alleen een website heeft u uiteraard niet genoeg, u wilt
+            natuurlijk dat deze website gezien wodt. Dit doet u door hem online
+            te zetten, u kunt zelf een zogeheten hosting bedrijf zoeken maar ik
+            doe het ook met liefde voor u. Zodra dit gedaan is heeft u zelf
+            volledige controle hierover, u kunt in het dashboard alle
+            verschillende instellingen aanpassen die u maar wilt.
+          </p>
+        </div>
       </div>
-      <div id="hosting-service">
-        <h2>Website hosting</h2>
-        <p>Aan alleen een website heeft u uiteraard niet genoeg, u wilt natuurlijk dat deze website gezien wodt. Dit doet u door hem online te zetten, u kunt zelf een zogeheten hosting bedrijf zoeken maar ik doe het ook met liefde voor u. Zodra dit gedaan is heeft u zelf volledige controle hierover, u kunt in het dashboard alle verschillende instellingen aanpassen die u maar wilt.
-        </p>
-      </div>
-    </div>
-    <div id="services-container4">
+      <!--<div id="services-container4">
       <div id="foto-services-redactie">
       </div>
       <div id="tekst-redactie">
@@ -158,65 +219,41 @@
           website maak. Dit kan in
           combinatie met het laten maken van een website op maat
           maar ook als u al een website heeft bied ik deze service aan. U legt simpelweg uit wat u geschreven wilt laten
-          worden en ik maak er op proffesioneel niveau een prachtig geschreven tekst van
+          worden en ik maak er op professioneel niveau een prachtig geschreven tekst van
         </p>
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer-container">
-      <ul>
-        <li>Tel: +31 6 46 77 12 93</li>
-        <li>E-mail: info@icties.nl</li>
-      </ul>
-      <div class="form">
-        <form name="contact" netlify>
-          <!-- als je NETLIFY gebruikt kan je gewoon 'netlify' achter 'name=""' zetten in je form tag.-->
-          <input type="text" name="name" placeholder="Naam">
-          <br>
-          <br>
-          <input type="email" name="email" placeholder="E-mail">
-          <br>
-          <br>
-          <textarea name="description" id="" cols="30" rows="08"></textarea>
-          <br>
-          <br>
-          <button>Neem contact op</button>
-        </form>
+    </div>-->
+    </main>
+    <footer>
+      <div class="footer-container">
+        <ul>
+          <li>Tel: +31 6 46 77 12 93</li>
+          <li>E-mail: info@icties.nl</li>
+        </ul>
+        <div class="form">
+          <form name="contact" netlify>
+            <!-- als je NETLIFY gebruikt kan je gewoon 'netlify' achter 'name=""' zetten in je form tag.-->
+            <input type="text" name="name" placeholder="Naam" />
+            <br />
+            <br />
+            <input type="email" name="email" placeholder="E-mail" />
+            <br />
+            <br />
+            <textarea name="description" id="" cols="30" rows="08"></textarea>
+            <br />
+            <br />
+            <button>Neem contact op</button>
+          </form>
+        </div>
+        <a href="https://github.com/designerties/" target="_blank"
+          ><div class="github-footer"></div
+        ></a>
+        <a href="https://instagram.com/tieshoenderdos/" target="_blank"
+          ><div class="insta-footer"></div
+        ></a>
       </div>
-      <div class="github-footer">
-      </div>
-      <div class="insta-footer">
-      </div>
-    </div>
-  </footer>
-</body>
-<script src="js/svg.js"></script>
-<script>
-
-  var tweedeElement = document.querySelector("#services-container1");
-  var witNav = tweedeElement.offsetTop;
-
-  window.onscroll = function () { scrollFunction() };
-
-
-  function scrollFunction() {
-    if (window.pageYOffset >= witNav) {
-      document.getElementById("header").style.backgroundColor = "white";
-      document.getElementById("h1-nav").style.color = "black";
-      document.getElementById("projecten").style.color = "black";
-      document.getElementById("prijzen").style.color = "black";
-      document.getElementById("contact").style.color = "black";
-    } else {
-      document.getElementById("header").style.backgroundColor = "";
-      document.getElementById("h1-nav").style.color = "white";
-      document.getElementById("projecten").style.color = "white";
-      document.getElementById("prijzen").style.color = "white";
-      document.getElementById("contact").style.color = "white";
-    }
-  }
-
-  scrollFunction();
-</script>
-
+    </footer>
+  </body>
+  <script src="js/svg.js"></script>
+  <script src="js/header.js"></script>
 </html>
