@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   background-color: rgb(20, 20, 20);
   width: 100%;
@@ -61,18 +65,21 @@ a:hover {
 
 .hamburger-container {
   visibility: hidden;
-  background-color: turquoise;
+  background-color: rgb(30, 30, 30);
   width: 256px;
-  height: 550px;
+  height: 350px;
   margin: 0;
   position: absolute;
-  top: 55%;
+  top: 37%;
   left: 90%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 #hamburger-knop {
+  width: 60px;
+  height: 60px;
   display: none;
   position: absolute;
   background-color: rgb(30, 30, 30);
@@ -87,10 +94,11 @@ a:hover {
 
 button:hover {
   cursor: pointer;
-  background-color: rgb(131, 247, 235);
 }
 
 #hamburger-kruis {
+  width: 60px;
+  height: 60px;
   display: none;
   background-color: rgb(30, 30, 30);
   border: none;
@@ -101,6 +109,13 @@ button:hover {
   right: 20px;
   padding: 1rem;
   z-index: 3;
+}
+
+.ham-nav-link {
+  text-align: center;
+  padding-top: 2rem;
+  top: 50px;
+  padding-left: 5em;
 }
 
 @keyframes drop {
