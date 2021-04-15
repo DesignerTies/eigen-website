@@ -660,6 +660,7 @@ form {
     font-size: small;
   }
   #tekst-foto-services p {
+    padding-top: 5px;
     font-size: 10px;
   }
 
