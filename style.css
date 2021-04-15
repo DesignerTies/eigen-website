@@ -30,6 +30,7 @@ header {
   width: 50%;
   margin: auto;
   z-index: 2;
+  border-radius: 0.3rem;
 }
 
 nav {
@@ -64,7 +65,7 @@ a:hover {
 }
 
 .hamburger-container {
-  visibility: hidden;
+  display: none;
   background-color: rgb(30, 30, 30);
   width: 150px;
   height: 40vh;
@@ -256,7 +257,7 @@ button:hover {
   background-size: cover;
   width: 450px;
   height: 450px;
-  /*box-shadow: 20px 20px 80px #bbbbbb;*/
+  box-shadow: 20px 20px 80px #bbbbbb;
   position: absolute;
   top: 150%;
   left: 20%;
@@ -554,6 +555,10 @@ form {
   header {
     width: 60%;
   }
+  #tekst-foto-services {
+    background-color: #fff;
+    box-shadow: 0px 0px 0px #fff;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -582,38 +587,3 @@ form {
     width: 80%;
   }
 }
-
-/*header {
-    position: sticky;
-    top: 0px;
-    height: 5vh;
-    width: 50%;
-    margin: auto;
-    z-index: 1;
-}
-
-nav {
-    min-height: 5vh;
-    margin: auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content:  space-between;
-}
-
-nav h1, nav ul {
-    font-size: 1.3rem;
-    flex: 0.9;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav a {
-    color: #f5f5f7;
-    font-family: 'Rubik', sans-serif;
-    text-decoration: none;
-} */
