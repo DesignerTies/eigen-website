@@ -487,6 +487,16 @@ footer {
   height: 50%;
 }
 
+.footer-container h2 {
+  font-family: "Roboto", sans-serif;
+  display: none;
+  margin-top: 3rem;
+}
+
+#socials-tekst {
+  margin-top: 19rem;
+}
+
 .footer-container {
   border-top: 2px solid rgb(177, 176, 176);
   position: absolute;
@@ -500,7 +510,6 @@ footer {
 
 .footer-container ul {
   list-style: none;
-  justify-content: space-evenly;
 }
 
 .footer-container ul li {
@@ -579,6 +588,10 @@ form {
   .footer-container ul li {
     padding-left: 0px;
   }
+  .github-footer,
+  .insta-footer {
+    left: 95%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -613,6 +626,12 @@ form {
   #foto-hosting-service {
     width: 390px;
     height: 390px;
+    left: 60%;
+  }
+  .footer-container ul li {
+    font-size: large;
+  }
+  form {
     left: 60%;
   }
 }
@@ -651,6 +670,33 @@ form {
     height: 270px;
     left: 70%;
     background-size: cover;
+  }
+  footer,
+  .footer-container {
+    height: 80vh;
+  }
+  .footer-container h2 {
+    display: block;
+  }
+  .footer-container ul {
+    padding-top: 2rem;
+  }
+  .footer-container ul li {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+  .form {
+    top: 68%;
+    left: 15%;
+  }
+  .github-footer {
+    top: 100%;
+    left: 5%;
+  }
+
+  .insta-footer {
+    top: 100%;
+    left: 16%;
   }
 }
 
@@ -706,5 +752,33 @@ form {
     width: 220px;
     height: 220px;
     left: 50%;
+  }
+  .footer-container {
+    top: 350%;
+  }
+  .footer-container,
+  footer {
+    height: 85vh;
+  }
+  .footer-container h2 {
+    margin-top: 1rem;
+  }
+  .footer-container ul {
+    padding-top: 1rem;
+  }
+  .form {
+    top: 65%;
+    margin-left: 50px;
+  }
+  #socials-tekst {
+    margin-top: 18rem;
+  }
+  .github-footer {
+    top: 100%;
+    left: 7%;
+  }
+  .insta-footer {
+    top: 100%;
+    margin-left: 3rem !important;
   }
 }
