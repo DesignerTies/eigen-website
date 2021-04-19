@@ -246,6 +246,23 @@ button:hover {
   }
 }
 
+@keyframes appear {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+main h3 {
+  font-family: "Roboto", sans-serif;
+  z-index: 3;
+  visibility: hidden;
+  color: white;
+  animation: appear 2s ease-in 4.5s;
+}
+
 #services-container1 {
   background-color: whitesmoke;
   width: 100%;
