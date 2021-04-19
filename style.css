@@ -247,20 +247,29 @@ button:hover {
 }
 
 @keyframes appear {
-  from {
-    visibility: hidden;
+  0% {
+    opacity: 0;
   }
-  to {
-    visibility: visible;
+  100% {
+    opacity: 1;
   }
 }
 
 main h3 {
   font-family: "Roboto", sans-serif;
   z-index: 3;
-  visibility: hidden;
+  opacity: 0;
+  animation: appear 2s ease-in 5.3s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   color: white;
-  animation: appear 2s ease-in 4.5s;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #services-container1 {
@@ -500,8 +509,8 @@ main h3 {
 footer {
   background-color: whitesmoke;
   margin: auto;
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 50vh;
 }
 
 .footer-container h2 {
@@ -517,12 +526,10 @@ footer {
 .footer-container {
   border-top: 2px solid rgb(177, 176, 176);
   position: absolute;
-  width: 80%;
-  height: 35%;
-  top: 310%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 35vh;
+  margin: 15vh 0vh 10vw 10vw;
+  display: flex;
 }
 
 .footer-container ul {
@@ -531,34 +538,15 @@ footer {
 
 .footer-container ul li {
   font-size: 1.3rem;
-  padding: 55px 100px;
+  padding: 5vh 10vh;
   font-family: "Roboto", sans-serif;
 }
 
 .form {
-  align-items: center;
-  position: absolute;
-  height: 80%;
-  width: 40%;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-form {
   text-align: center;
   display: table;
-  height: 10%;
-  align-items: center;
-  align-items: center;
-  position: absolute;
-  height: 80%;
-  width: 40%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  align-self: center;
+  margin-left: 10vw;
 }
 
 .form p {
@@ -577,10 +565,11 @@ form {
   position: absolute;
   width: 75px;
   height: 75px;
-  top: 30%;
+  /* top: 30%;
   left: 80%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  margin: 7vh 15vw;
 }
 
 .insta-footer {
@@ -589,10 +578,7 @@ form {
   position: absolute;
   width: 75px;
   height: 75px;
-  top: 70%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  margin: 18vh 15vw;
 }
 
 @media screen and (max-width: 1300px) {
