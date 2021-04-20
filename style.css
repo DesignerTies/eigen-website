@@ -546,7 +546,7 @@ footer {
   text-align: center;
   display: table;
   align-self: center;
-  margin-left: 10vw;
+  margin-left: 5vw;
 }
 
 .form p {
@@ -569,7 +569,7 @@ footer {
   left: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); */
-  margin: 7vh 15vw;
+  margin: 5vh 15vw;
 }
 
 .insta-footer {
@@ -578,7 +578,7 @@ footer {
   position: absolute;
   width: 75px;
   height: 75px;
-  margin: 18vh 15vw;
+  margin: 16vh 15vw;
 }
 
 @media screen and (max-width: 1300px) {
@@ -590,10 +590,6 @@ footer {
   }
   .footer-container ul li {
     padding-left: 0px;
-  }
-  .github-footer,
-  .insta-footer {
-    left: 95%;
   }
 }
 
