@@ -1,6 +1,6 @@
 <?php
-if($_POST["Message"]) {
-mail("tieshoenderdos@gmail.com", "Here is the sample subject line",
-$_POST["Bedankt voor uw bericht"]. "From: test@test.com");
+if($_POST["contact"]) {
+mail("tieshoenderdos@gmail.com" $_POST["description"],
+$_POST["Bedankt voor uw bericht"]. "Van:"$_POST["email"]);
 }
 ?>

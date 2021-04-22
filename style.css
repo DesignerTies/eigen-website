@@ -520,7 +520,8 @@ footer {
 }
 
 #socials-tekst {
-  margin-top: 19rem;
+  margin-top: 30rem;
+  position: absolute;
 }
 
 .footer-container {
@@ -530,6 +531,7 @@ footer {
   height: 35vh;
   margin: 15vh 0vh 10vw 10vw;
   display: flex;
+  justify-content: left;
 }
 
 .footer-container ul {
@@ -630,8 +632,9 @@ footer {
   .footer-container ul li {
     font-size: large;
   }
-  form {
-    left: 60%;
+  .github-footer,
+  .insta-footer {
+    margin-left: 10vw;
   }
 }
 
@@ -670,33 +673,37 @@ footer {
     left: 70%;
     background-size: cover;
   }
-  footer,
+  footer {
+    height: 100vh;
+  }
   .footer-container {
-    height: 80vh;
+    height: 85vh;
   }
   .footer-container h2 {
     display: block;
   }
   .footer-container ul {
-    padding-top: 2rem;
+    padding-top: 5rem;
+    margin-left: 0;
   }
   .footer-container ul li {
     padding-bottom: 0px;
     padding-top: 10px;
   }
   .form {
-    top: 68%;
+    top: 30%;
     left: 15%;
+    position: absolute;
   }
   .github-footer {
-    top: 100%;
-    left: 5%;
+    margin-top: 73vh;
+    margin-right: 2vw;
   }
 
-  .insta-footer {
+  /* .insta-footer {
     top: 100%;
     left: 16%;
-  }
+  } */
 }
 
 @media screen and (max-width: 710px) {
