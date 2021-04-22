@@ -18,6 +18,7 @@ function scrollFunction() {
     document.getElementById("prijzen").style.color = "white";
     document.getElementById("contact").style.color = "white";
   }
+
 }
 
 scrollFunction();

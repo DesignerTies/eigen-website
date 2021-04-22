@@ -31,7 +31,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Je hebt een nieuw bericht van ' . $_POST["name"] . ' (' .  $_POST["email"] . ')' . ' gekregen van de form op je website.';
-    $mail->Body    = $_POST["name"] . "  " . $_POST["description"];
+    $mail->Body    = $_POST["description"];
     $mail->AltBody = $_POST["description"];
 
     $mail->send();

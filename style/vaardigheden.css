@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  position: sticky;
+  background-color: white;
+  top: 0px;
+  height: 5vh;
+  width: 50%;
+  margin: auto;
+  z-index: 2;
+  border-radius: 0.3rem;
+}
+
+nav {
+  min-height: 5vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1,
+nav ul {
+  font-size: 1.3rem;
+  flex: 0.9;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: #000;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hamburger-container {
+  display: none;
+  background-color: rgb(30, 30, 30);
+  width: 150px;
+  height: 40vh;
+  margin: 0;
+  float: right;
+  z-index: 3;
+}
+
+#hamburger-knop {
+  width: 60px;
+  height: 60px;
+  display: none;
+  position: absolute;
+  background-color: rgb(30, 30, 30);
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  top: 20px;
+  right: 20px;
+  padding: 1rem;
+  z-index: 3;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#hamburger-kruis {
+  width: 60px;
+  height: 60px;
+  display: none;
+  background-color: rgb(30, 30, 30);
+  border: none;
+  color: white;
+  position: absolute;
+  border-radius: 0.3rem;
+  top: 20px;
+  right: 20px;
+  padding: 1rem;
+  z-index: 3;
+}
+
+.ham-nav-link {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+
+.hamburger-container ul {
+  margin-left: 25px;
+  margin-top: 100px;
+}
+
+.hamburger-container ul li {
+  padding-top: 1em;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  header {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  #hamburger-knop {
+    display: inline-block;
+  }
+  header {
+    display: none;
+  }
+}
