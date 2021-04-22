@@ -697,7 +697,12 @@ footer {
   }
   .github-footer {
     margin-top: 73vh;
-    margin-right: 2vw;
+    left: 0vw;
+    margin-left: 0;
+  }
+  .insta-footer {
+    margin-top: 73vh;
+    left: 10vw;
   }
 
   /* .insta-footer {
@@ -718,6 +723,9 @@ footer {
 @media screen and (max-width: 520px) {
   #logo {
     width: 80%;
+  }
+  main h3 {
+    font-size: small;
   }
   #tekst-foto-services {
     height: 250px;
@@ -759,32 +767,17 @@ footer {
     height: 220px;
     left: 50%;
   }
-  .footer-container {
-    top: 350%;
-  }
-  .footer-container,
   footer {
-    height: 85vh;
+    height: 115vh;
   }
-  .footer-container h2 {
-    margin-top: 1rem;
-  }
-  .footer-container ul {
-    padding-top: 1rem;
+  .footer-container {
+    height: 100vh;
   }
   .form {
-    top: 65%;
-    margin-left: 50px;
+    margin-top: 2rem;
   }
-  #socials-tekst {
-    margin-top: 18rem;
-  }
+  .insta-footer,
   .github-footer {
-    top: 100%;
-    left: 7%;
-  }
-  .insta-footer {
-    top: 100%;
-    margin-left: 3rem !important;
+    margin-top: 85vh;
   }
 }
