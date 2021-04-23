@@ -134,6 +134,79 @@ button:hover {
   }
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-vaardigheden {
+  width: 250px;
+  height: 250px;
+  margin: 5em 1em;
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+}
+
+#wp-logo,
+#sql-logo {
+  margin-top: 0.5em;
+}
+
+#html-logo {
+  background-image: url("https://1.bp.blogspot.com/-NGHwBncyA68/UiMm_8b2ZUI/AAAAAAAAAnA/17OGXCKI4zE/s1600/Logo+HTML5.JPG");
+  animation: logo-appear 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+#css-logo {
+  background-image: url("https://www.lifewire.com/thmb/KxD14mo5rDuGJv4oV4bRD1eBrlM=/1600x1067/filters:fill(auto,1)/Logo-CSS3-591fc2625f9b58f4c0e3ef4b.jpg");
+  animation: logo-appear 0.5s ease-in 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#js-logo {
+  background-image: url("https://pluspng.com/img-png/javascript-vector-png-js-logo-920.png");
+  animation: logo-appear 0.5s ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+#python-logo {
+  background-image: url("../img/python-logo.png");
+  animation: logo-appear 0.5s ease-in 1.5s;
+  animation-fill-mode: forwards;
+}
+
+#wp-logo {
+  background-image: url("http://www.pngall.com/wp-content/uploads/2016/05/WordPress-Logo-PNG-Pic.png");
+  animation: logo-appear 0.5s ease-in 2s;
+  animation-fill-mode: forwards;
+}
+
+#sql-logo {
+  background-image: url("https://software.3metas.com/wp-content/uploads/2014/04/sql2-compressed-1.jpg");
+  animation: logo-appear 0.5s ease-in 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logo-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @media screen and (max-width: 1300px) {
   header {
     width: 60%;
