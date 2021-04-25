@@ -1,7 +1,9 @@
 var tweedeElement = document.querySelector("#services-container1");
 var witNav = tweedeElement.offsetTop;
 
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {
+   scrollFunction() 
+};
 
 
 function scrollFunction() {
@@ -20,5 +22,3 @@ function scrollFunction() {
   }
 
 }
-
-scrollFunction();

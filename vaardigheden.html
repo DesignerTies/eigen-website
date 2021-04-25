@@ -41,6 +41,20 @@
         <div class="logo-vaardigheden" id="python-logo"></div>
         <div class="logo-vaardigheden" id="wp-logo"></div>
         <div class="logo-vaardigheden" id="sql-logo"></div>
+        <div id="tekst">
+          <h2>LIPSUM</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only
+            five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with
+            the release of Letraset sheets containing Lorem Ipsum passages, and
+            more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.
+          </p>
+      </div>
       </div>
       <svg
         version="1.0"
@@ -67,20 +81,6 @@
           ></path>
         </g>
       </svg>
-      <div id="tekst">
-        <h2>LIPSUM</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
     </main>
     <footer></footer>
     <script>
@@ -93,6 +93,20 @@
           "slow"
         );
       });
+
+      let tekst = document.getElementById("tekst");
+      let witNav = tekst.offsetTop;
+
+      window.onscroll = function () {
+        disappear() 
+      };
+
+      function disappear() {
+        if (window.pageYOffset >= witNav) {
+          document.querySelector("svg").style.visibility = "hidden"
+        }
+      }
+
     </script>
   </body>
 </html>
