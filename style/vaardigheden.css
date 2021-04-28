@@ -173,7 +173,7 @@ main {
 }
 
 #js-logo {
-  background-image: url("https://pluspng.com/img-png/javascript-vector-png-js-logo-920.png");
+  background-image: url("../img/js-logo.png");
   animation: logo-appear 0.5s ease-in 1s;
   animation-fill-mode: forwards;
 }
@@ -191,12 +191,12 @@ main {
 }
 
 #sql-logo {
-  background-image: url("https://software.3metas.com/wp-content/uploads/2014/04/sql2-compressed-1.jpg");
+  background-image: url("../img/sql-logo.png");
   animation: logo-appear 0.5s ease-in 2.5s;
   animation-fill-mode: forwards;
 }
 
-svg {
+#svg {
   top: 95%;
   left: 50%;
   position: absolute;
@@ -211,6 +211,11 @@ svg {
   width: 50vw;
   height: 40vh;
   text-align: center;
+}
+
+#tekst p,
+#tekst h2 {
+  font-family: "Antonio", sans-serif;
 }
 
 @keyframes logo-appear {
