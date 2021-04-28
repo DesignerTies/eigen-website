@@ -238,9 +238,90 @@ main {
   }
 }
 
+footer {
+  background-color: #fff;
+  margin: auto;
+  width: 100vw;
+  height: 50vh;
+}
+
+.footer-container h2 {
+  font-family: "Roboto", sans-serif;
+  display: none;
+  margin-top: 3rem;
+}
+
+#socials-tekst {
+  margin-top: 30rem;
+  position: absolute;
+}
+
+.footer-container {
+  border-top: 2px solid rgb(177, 176, 176);
+  position: absolute;
+  width: 80vw;
+  height: 35vh;
+  margin: 15vh 0vh 10vw 10vw;
+  display: flex;
+  justify-content: left;
+}
+
+.footer-container ul {
+  list-style: none;
+}
+
+.footer-container ul li {
+  font-size: 1.3rem;
+  padding: 5vh 10vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.form {
+  text-align: center;
+  display: table;
+  align-self: center;
+  margin-left: 5vw;
+}
+
+.form p {
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+}
+
+.form input {
+  text-align: center;
+}
+
+.github-footer {
+  background-image: url("../img/github_logo.png");
+  background-size: cover;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  /* top: 30%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  margin: 5vh 15vw;
+}
+
+.insta-footer {
+  background-image: url("../img/inata_ultiem.png");
+  background-size: cover;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  margin: 16vh 15vw;
+}
+
 @media screen and (max-width: 1300px) {
   header {
     width: 60%;
+  }
+  .footer-container ul li {
+    padding-left: 0px;
   }
 }
 
@@ -248,11 +329,49 @@ main {
   nav {
     width: 100%;
   }
+  .footer-container ul li {
+    font-size: large;
+  }
+  .github-footer,
+  .insta-footer {
+    margin-left: 10vw;
+  }
 }
 
 @media screen and (max-width: 850px) {
   header {
     width: 70%;
+  }
+  footer {
+    height: 100vh;
+  }
+  .footer-container {
+    height: 85vh;
+  }
+  .footer-container h2 {
+    display: block;
+  }
+  .footer-container ul {
+    padding-top: 5rem;
+    margin-left: 0;
+  }
+  .footer-container ul li {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+  .form {
+    top: 30%;
+    left: 15%;
+    position: absolute;
+  }
+  .github-footer {
+    margin-top: 73vh;
+    left: 0vw;
+    margin-left: 0;
+  }
+  .insta-footer {
+    margin-top: 73vh;
+    left: 10vw;
   }
 }
 
@@ -262,5 +381,30 @@ main {
   }
   header {
     display: none;
+  }
+  #tekst {
+    width: 90vw;
+    height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  footer {
+    height: 115vh;
+  }
+  .footer-container {
+    height: 100vh;
+  }
+  .form {
+    margin-top: 2rem;
+  }
+  .insta-footer,
+  .github-footer {
+    margin-top: 85vh;
+  }
+  #tekst {
+    width: 95vw;
   }
 }
