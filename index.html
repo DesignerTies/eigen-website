@@ -77,11 +77,11 @@
   <body>
     <button id="hamburger-knop" onclick="showFunction()">☰</button>
     <div class="hamburger-container">
-        <ul>
-            <li><a href = "#" class="ham-nav-link">Vaardigheden</a></li>
-            <li><a href = "#" class="ham-nav-link">Tarief</a></li>
-            <li><a href = "#" class="ham-nav-link">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#" class="ham-nav-link">Vaardigheden</a></li>
+        <li><a href="#" class="ham-nav-link">Tarief</a></li>
+        <li><a href="#" class="ham-nav-link">Contact</a></li>
+      </ul>
     </div>
     <button id="hamburger-kruis" onclick="dissapearFunction()">X</button>
     <script src="js/hamburger.js"></script>
@@ -243,12 +243,7 @@
           <li>E-mail: info@tieshoenderdos.nl</li>
         </ul>
         <div class="form">
-          <form
-            name="contact"
-            method="POST"
-            action="backend/form.php"
-          >
-            <!-- als je NETLIFY gebruikt kan je gewoon 'netlify' achter 'name=""' zetten in je form tag.-->
+          <form name="contact" method="POST" action="backend/form.php">
             <input type="text" name="name" placeholder="Naam" />
             <br />
             <br />

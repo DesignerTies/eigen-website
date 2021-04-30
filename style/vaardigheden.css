@@ -325,9 +325,15 @@ footer {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1060px) {
   nav {
     width: 100%;
+  }
+  #python-logo {
+    margin-top: 0em;
+  }
+  #svg {
+    top: 120vh;
   }
   .footer-container ul li {
     font-size: large;
@@ -338,9 +344,15 @@ footer {
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 800px) {
   header {
     width: 70%;
+  }
+  #js-logo {
+    margin-top: 0em;
+  }
+  #svg {
+    top: 150vh;
   }
   footer {
     height: 100vh;
