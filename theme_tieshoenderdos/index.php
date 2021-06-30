@@ -1,102 +1,9 @@
-<html lang="en">
-  <head>
-    <meta
-      name="description"
-      content="Website laten maken en hosten voor een voordelige prijs. Websites kunnen op maat gemaakt worden maar kunnen ook aangepast worden op basis van een template."
-    />
-    <meta
-      name="keywords"
-      content="Website, hosting, template, domeinnaam, Ties Hoenderdos"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <script src="js/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.js"></script>
-    <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-      $(document).ready(function () {
-        var inview = new Waypoint.Inview({
-          element: $("#tekst-foto-services")[0],
-          enter: function (direction) {
-            $("#tekst-foto-services").addClass("is--entered");
-          },
-        });
-      });
+<?php get_header(); ?>
 
-      $(document).ready(function () {
-        var inview = new Waypoint.Inview({
-          element: $("#tekst-template")[0],
-          enter: function (direction) {
-            $("#tekst-template").addClass("is--entered");
-          },
-        });
-      });
 
-      $(document).ready(function () {
-        var inview = new Waypoint.Inview({
-          element: $("#hosting-service")[0],
-          enter: function (direction) {
-            $("#hosting-service").addClass("is--entered");
-          },
-        });
-      });
 
-      $(document).ready(function () {
-        var inview = new Waypoint.Inview({
-          element: $("#tekst-redactie")[0],
-          enter: function (direction) {
-            $("#tekst-redactie").addClass("is--entered");
-          },
-        });
-      });
-    </script>
-    <title>Home</title>
-  </head>
-
-  <body>
-    <button id="hamburger-knop" onclick="showFunction()">☰</button>
-    <div class="hamburger-container">
-      <ul>
-        <li><a href="#" class="ham-nav-link">Vaardigheden</a></li>
-        <li><a href="#" class="ham-nav-link">Tarief</a></li>
-        <li><a href="#" class="ham-nav-link">Contact</a></li>
-      </ul>
-    </div>
-    <button id="hamburger-kruis" onclick="dissapearFunction()">X</button>
-    <script src="js/hamburger.js"></script>
-    <header id="header">
-      <nav>
-        <h1><a href="#" id="h1-nav">Ties Hoenderdos</a></h1>
-        <ul class="nav-links">
-          <li><a href="#" class="nav-link" id="projecten">Vaardigheden</a></li>
-          <li><a href="#" class="nav-link" id="prijzen">Tarief</a></li>
-          <li><a href="#" class="nav-link" id="contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="container-svg">
+<main>
+	<div class="container-svg">
         <svg
           id="logo"
           width="485"
@@ -177,97 +84,34 @@
           />
         </svg>
         <h3>(Front-end) Web-developer</h3>
-      </div>
-      <section>
-        <div id="services-container1">
-          <div id="foto-services"></div>
-          <div id="tekst-foto-services" class="tekst-services">
-            <h2>Websites op maat</h2>
-            <p>
-              Ik maak voor verschillende praktijken websites op maat, hierbij
-              kun je denken aan particuliere websites maar ook aan bijvoorbeeld
-              websites voor kleine bedrijven. Zulke websites kunnen kleine
-              websites zijn van maar een of twee pagina's maar ik sluit het
-              maken van grotere websites met meer dan vijf pagina's niet uit.
-              Alle websites die ik maak zijn volledig responsive wat betekent
-              dat ze ook goed op mobiel te gebruiken zijn. U kunt navigeren naar
-              de prijzen per website in de menu balk hierboven. Wilt u contact
-              op nemen kunt hier ook op deze manier naar navigeren.
-            </p>
-          </div>
-        </div>
-        <!--<div id="services-container2">
-        <div id="foto-website-template">
-        </div>
-        <div id="tekst-template">
-          <h2>Website op basis van een template</h2>
-          <p>Had u een simpele maar mooie website gewild, dan zit u hier goed! Ik maak niet alleen websites op maat maar
-            ook op basis van een template die ik zelf heb gemaakt.
-            Deze template bevat een, twee of drie pagina's en bevat niet teveel gekke dingen zoals animaties. Verder is de
-            website uiteraard helemaal responsive en kunt u gewoon uw eigen foto's tekst, etc. toevoegen.
-          </p>
-        </div>
-      </div>-->
-        <div id="services-container3">
-          <div id="foto-hosting-service"></div>
-          <div id="hosting-service" class="tekst-services">
-            <h2>Website hosting</h2>
-            <p>
-              Aan alleen een website heeft u uiteraard niet genoeg, u wilt
-              natuurlijk dat deze website gezien wodt. Dit doet u door hem
-              online te zetten, u kunt zelf een zogeheten hosting bedrijf zoeken
-              maar ik doe het ook met liefde voor u. Zodra dit gedaan is heeft u
-              zelf volledige controle hierover, u kunt in het dashboard alle
-              verschillende instellingen aanpassen die u maar wilt.
-            </p>
-          </div>
-        </div>
-        <!--<div id="services-container4">
-        <div id="foto-services-redactie">
-        </div>
-        <div id="tekst-redactie">
-          <h2>Tekstredactie</h2>
-          <p>Als u in de knoop zit met de tekst van uw website bied ik deze service aan, waarin ik de tekst van uw
-            website maak. Dit kan in
-            combinatie met het laten maken van een website op maat
-            maar ook als u al een website heeft bied ik deze service aan. U legt simpelweg uit wat u geschreven wilt laten
-            worden en ik maak er op professioneel niveau een prachtig geschreven tekst van
-          </p>
-        </div>
-      </div>-->
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <h2>Contact:</h2>
-        <ul>
-          <li>Tel: +31 6 46 77 12 93</li>
-          <li>E-mail: info@tieshoenderdos.nl</li>
-        </ul>
-        <div class="form">
-          <form name="contact" method="POST" action="backend/form.php">
-            <input type="text" name="name" placeholder="Naam" />
-            <br />
-            <br />
-            <input type="email" name="email" placeholder="E-mail" />
-            <br />
-            <br />
-            <textarea name="description" id="" cols="30" rows="08"></textarea>
-            <br />
-            <br />
-            <button type="submit">Neem contact op</button>
-          </form>
-        </div>
-        <h2 id="socials-tekst">Socials:</h2>
-        <a href="https://github.com/designerties/" target="_blank"
-          ><div class="github-footer"></div
-        ></a>
-        <a href="https://instagram.com/tieshoenderdos/" target="_blank"
-          ><div class="insta-footer"></div
-        ></a>
-      </div>
-    </footer>
-  </body>
-  <script src="js/svg.js"></script>
-  <script src="js/header.js"></script>
-</html>
+    </div>
+    <section>
+	<?php if ( have_posts() ) : ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<div class="post-header">
+				<div class="date"><?php the_time( 'M j y' ); ?></div>
+					<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			<div class="author"><?php the_author(); ?></div>
+			</div><!--end post header-->
+			<div class="entry clear">
+				<?php if ( function_exists( 'add_theme_support' ) ) the_post_thumbnail(); ?>
+				<?php the_content(); ?>
+				<?php edit_post_link(); ?>
+				<?php wp_link_pages(); ?> </div>
+			<!--end entry-->
+			<div class="post-footer">
+				<div class="comments"><?php comments_popup_link( 'Leave a Comment', '1 Comment', '% Comments' ); ?></div>
+			</div><!--end post footer-->
+			</div><!--end post-->
+	<?php endwhile; /* rewind or continue if all posts have been fetched */ ?>
+		<div class="navigation index">
+			<div class="alignleft"><?php next_posts_link( 'Older Entries' ); ?></div>
+			<div class="alignright"><?php previous_posts_link( 'Newer Entries' ); ?></div>
+		</div><!--end navigation-->
+	<?php else : ?>
+	<?php endif; ?>	
+    </section>
+</main>
+
+<?php get_footer(); ?>
