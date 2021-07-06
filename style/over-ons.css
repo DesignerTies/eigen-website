@@ -9,6 +9,10 @@ select {
   vertical-align: middle;
 }
 
+svg:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -18,14 +22,23 @@ li {
 }
 
 body {
-  background-color: #fff;
+  background-color: whitesmoke;
   width: 100%;
   overflow-x: hidden;
 }
 
 header {
+  background-color: rgb(30, 30, 30);
+  width: 100%;
   position: sticky;
-  background-color: white;
+  top: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.header-wrapper {
+  position: sticky;
+  background-color: rgb(30, 30, 30);
   top: 0px;
   height: 5vh;
   width: 50%;
@@ -56,7 +69,7 @@ nav ul {
 }
 
 nav a {
-  color: #000;
+  color: #fff;
   font-family: "Rubik", sans-serif;
   text-decoration: none;
 }
@@ -135,14 +148,111 @@ button:hover {
 }
 
 main {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
+.banner-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+}
+
+.banner-wrapper h1 {
+  text-align: center;
+  padding-top: 40vh;
+  font-family: "Lato", sans-serif;
+  font-size: 72px;
+  color: #fff;
+  opacity: 0;
+  animation: fade-in 3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#svg-above {
+  top: 95vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: 0;
+  animation: fade-in 2s ease-in 2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flex-container-fotos {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.foto-over {
+  width: 380px;
+  height: 290px;
+  background-color: teal;
+  background-size: cover;
+  border-style: 2px solid;
+  border-color: #535353;
+  border-radius: 2%;
+}
+
+.tekst-container-over {
+  width: 380px;
+  height: 290px;
+  background-color: teal;
+  background-size: cover;
+  border-style: 2px solid;
+  border-color: #535353;
+  border-radius: 2%;
+}
+
+#foto-ties {
+  order: 2;
+  align-self: flex-end;
+}
+
+#foto-sem {
+  order: 1;
+  background-image: url("../img/sem.jpg");
+}
+
+#tekst-container-sem {
+  order: 4;
+  margin-top: 5vh;
+  background-image: url("../img/Ties.jpg");
+}
+
+#tekst-container-ties {
+  order: 3;
+  margin-top: 5vh;
+}
+
 .flex-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 15vh;
 }
 
 .logo-vaardigheden {
@@ -197,7 +307,7 @@ main {
 }
 
 #svg {
-  top: 95%;
+  top: 235%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -206,15 +316,17 @@ main {
   animation-fill-mode: forwards;
 }
 
-#tekst {
-  margin: 30vh;
-  width: 50vw;
-  height: 40vh;
-  text-align: center;
+#tekst-container {
+  margin-top: 30vh;
+  margin-bottom: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+  height: 30vh;
 }
 
-#tekst p,
-#tekst h2 {
+#tekst-container p,
+#tekst-container h2 {
   font-family: "Antonio", sans-serif;
 }
 
@@ -239,7 +351,7 @@ main {
 }
 
 footer {
-  background-color: #fff;
+  background-color: whitesmoke;
   margin: auto;
   width: 100vw;
   height: 50vh;
@@ -332,9 +444,6 @@ footer {
   #python-logo {
     margin-top: 0em;
   }
-  #svg {
-    top: 120vh;
-  }
   .footer-container ul li {
     font-size: large;
   }
@@ -352,7 +461,7 @@ footer {
     margin-top: 0em;
   }
   #svg {
-    top: 150vh;
+    top: 110%;
   }
   footer {
     height: 100vh;
@@ -403,6 +512,12 @@ footer {
 }
 
 @media screen and (max-width: 520px) {
+  #tekst-container {
+    text-align: center;
+  }
+  #svg {
+    top: 210%;
+  }
   footer {
     height: 115vh;
   }
@@ -415,8 +530,5 @@ footer {
   .insta-footer,
   .github-footer {
     margin-top: 85vh;
-  }
-  #tekst {
-    width: 95vw;
   }
 }

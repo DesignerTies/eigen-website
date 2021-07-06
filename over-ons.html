@@ -16,14 +16,17 @@
       href="https://fonts.googleapis.com/css2?family=Antonio&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/vaardigheden.css" />
-    <title>Vaardigheden - Ties Hoenderdos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/over-ons.css" />
+    <title>Over Ons - Ties Hoenderdos</title>
   </head>
   <body>
     <button id="hamburger-knop" onclick="showFunction()">☰</button>
     <div class="hamburger-container">
       <ul>
-        <li><a href="#" class="ham-nav-link">Vaardigheden</a></li>
+        <li><a href="#" class="ham-nav-link">Over Ons</a></li>
         <li><a href="#" class="ham-nav-link">Tarief</a></li>
         <li><a href="#" class="ham-nav-link">Contact</a></li>
       </ul>
@@ -34,13 +37,54 @@
       <nav>
         <h1><a href="#" id="h1-nav">Ties Hoenderdos</a></h1>
         <ul class="nav-links">
-          <li><a href="#" class="nav-link" id="projecten">Vaardigheden</a></li>
+          <li><a href="#" class="nav-link" id="projecten">Over Ons</a></li>
           <li><a href="#" class="nav-link" id="prijzen">Tarief</a></li>
           <li><a href="#" class="nav-link" id="contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <div class="banner-wrapper">
+        <h1>Leer ons kennen</h1>
+      </div>
+      <svg
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="35px"
+        height="35px"
+        viewBox="0 0 512.000000 512.000000"
+        preserveAspectRatio="xMidYMid meet"
+        id="svg-above"
+      >
+        <g
+          transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+          id="svg-style"
+          fill="white"
+          stroke="none"
+        >
+          <path
+            d="M207 4822 l-207 -207 1278 -1278 1277 -1277 1275 1275 1275 1275 -210 210 -210 210 -1065 -1065 -1065 -1065 -1065 1065 c-586 586 -1067 1065 -1070 1065 -3 0 -98 -93 -213 -208z"
+            class="jsx-156389127"
+          ></path>
+          <path
+            d="M207 2652 l-207 -207 1223 -1223 1222 -1222 110 0 110 0 1218 1218 c669 669 1217 1222 1217 1227 0 6 -92 102 -205 215 l-205 205 -1068 -1068 -1067 -1067 -1065 1065 c-586 586 -1067 1065 -1070 1065 -3 0 -98 -93 -213 -208z"
+            class="jsx-156389127"
+          ></path>
+        </g>
+      </svg>
+
+
+      <div class="flex-container-fotos">
+        <div id="foto-sem" class="foto-over"></div>
+        <div id="tekst-container-sem" class="tekst-container-over"></div>
+        <div id="foto-ties" class="foto-over">
+          <h3>Over Sem</h3>
+        </div>
+        <div id="tekst-container-ties" class="tekst-container-over">
+          <h3>Over Ties</h3>
+        </div>
+      </div>
+
       <div class="flex-container">
         <div class="logo-vaardigheden" id="html-logo"></div>
         <div class="logo-vaardigheden" id="css-logo"></div>
@@ -48,21 +92,8 @@
         <div class="logo-vaardigheden" id="python-logo"></div>
         <div class="logo-vaardigheden" id="wp-logo"></div>
         <div class="logo-vaardigheden" id="sql-logo"></div>
-        <div id="tekst">
-          <h2>LIPSUM</h2>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div>
       </div>
+
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +119,22 @@
           ></path>
         </g>
       </svg>
+      <div id="tekst-top"></div>
+      <div id="tekst-container" class="flex-container-fotos">
+        <h2>LIPSUM</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book. It has survived not
+          only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s
+          with the release of Letraset sheets containing Lorem Ipsum passages,
+          and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.
+        </p>
+      </div>
+
     </main>
     <footer>
       <div class="footer-container">
@@ -122,8 +169,43 @@
     </footer>
   </body>
   <script>
-    $("svg").on("click", function (e) {
-      var idName = $("#tekst");
+    var tweedeElementOverOns = document.querySelector(".flex-container-fotos");
+    var witNavOverOns = tweedeElementOverOns.offsetTop;
+
+    window.onscroll = function () {
+      scrollFunction() 
+    };
+
+
+    function scrollFunction() {
+      if (window.pageYOffset >= witNavOverOns) {
+        document.getElementById("header").style.width = "60%";
+        document.getElementById("h1-nav").style.color = "black";
+        document.getElementById("projecten").style.color = "black";
+        document.getElementById("prijzen").style.color = "black";
+        document.getElementById("contact").style.color = "black";
+      } else {
+        document.getElementById("header").style.width = "100%";
+        document.getElementById("h1-nav").style.color = "white";
+        document.getElementById("projecten").style.color = "white";
+        document.getElementById("prijzen").style.color = "white";
+        document.getElementById("contact").style.color = "white";
+      }
+    }
+
+  </script>
+  <script>
+    $("#svg-above").on("click", function(e) {
+      var id = $(".flex-container-fotos");
+      $("html, body").animate(
+        {
+          scrollTop: $(id).offset().top,
+        },
+        "slow"
+      );
+    });
+    $("#svg").on("click", function (e) {
+      var idName = $("#tekst-top");
       $("html, body").animate(
         {
           scrollTop: $(idName).offset().top,
