@@ -34,23 +34,13 @@ header {
   top: 0;
   margin: auto;
   z-index: 1;
-}
-
-.header-wrapper {
-  position: sticky;
-  background-color: rgb(30, 30, 30);
-  top: 0px;
   height: 5vh;
-  width: 50%;
-  margin: auto;
-  z-index: 2;
-  border-radius: 0.3rem;
 }
 
 nav {
   min-height: 5vh;
   margin: auto;
-  width: 90%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -195,64 +185,49 @@ main {
   }
 }
 
-.flex-container-fotos {
+.flex-container-ties {
   width: 100%;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: whitesmoke;
 }
 
-.foto-over {
-  width: 380px;
-  height: 290px;
-  background-color: teal;
-  background-size: cover;
-  border-style: 2px solid;
-  border-color: #535353;
-  border-radius: 2%;
-}
-
-.tekst-container-over {
-  width: 380px;
-  height: 290px;
-  background-color: teal;
-  background-size: cover;
-  border-style: 2px solid;
-  border-color: #535353;
-  border-radius: 2%;
-}
-
 #foto-ties {
-  order: 2;
-  align-self: flex-end;
+  margin: 10rem 0 0 5rem;
+  width: 380px;
+  height: 290px;
 }
 
-#foto-sem {
-  order: 1;
-  background-image: url("../img/sem.jpg");
+#tekst-wrapper-ties {
+  margin: 12rem 20rem 0 0;
+  text-align: center;
+  width: 500px;
 }
 
-#tekst-container-sem {
-  order: 4;
-  margin-top: 5vh;
-  background-image: url("../img/Ties.jpg");
+h2,
+h3,
+p {
+  font-family: "Rubik", sans-serif;
 }
 
-#tekst-container-ties {
-  order: 3;
-  margin-top: 5vh;
+#vaardigheden-txt {
+  margin-top: 2rem;
 }
 
 .flex-container {
   max-width: 1200px;
-  margin: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 15vh;
+  margin-top: 25vh;
 }
 
 .logo-vaardigheden {
@@ -272,57 +247,93 @@ main {
 
 #html-logo {
   background-image: url("https://1.bp.blogspot.com/-NGHwBncyA68/UiMm_8b2ZUI/AAAAAAAAAnA/17OGXCKI4zE/s1600/Logo+HTML5.JPG");
-  animation: logo-appear 0.5s ease-in;
-  animation-fill-mode: forwards;
 }
 
 #css-logo {
   background-image: url("https://www.lifewire.com/thmb/KxD14mo5rDuGJv4oV4bRD1eBrlM=/1600x1067/filters:fill(auto,1)/Logo-CSS3-591fc2625f9b58f4c0e3ef4b.jpg");
-  animation: logo-appear 0.5s ease-in 0.5s;
-  animation-fill-mode: forwards;
 }
 
 #js-logo {
   background-image: url("../img/js-logo.png");
-  animation: logo-appear 0.5s ease-in 1s;
-  animation-fill-mode: forwards;
 }
 
 #python-logo {
   background-image: url("../img/python-logo.png");
-  animation: logo-appear 0.5s ease-in 1.5s;
-  animation-fill-mode: forwards;
 }
 
 #wp-logo {
   background-image: url("http://www.pngall.com/wp-content/uploads/2016/05/WordPress-Logo-PNG-Pic.png");
-  animation: logo-appear 0.5s ease-in 2s;
-  animation-fill-mode: forwards;
 }
 
 #sql-logo {
   background-image: url("../img/sql-logo.png");
+}
+
+#html-logo.is--entered {
+  animation: logo-appear 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+#css-logo.is--entered {
+  animation: logo-appear 0.5s ease-in 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#js-logo.is--entered {
+  animation: logo-appear 0.5s ease-in 1s;
+  animation-fill-mode: forwards;
+}
+
+#python-logo.is--entered {
+  animation: logo-appear 0.5s ease-in 1.5s;
+  animation-fill-mode: forwards;
+}
+
+#wp-logo.is--entered {
+  animation: logo-appear 0.5s ease-in 2s;
+  animation-fill-mode: forwards;
+}
+
+#sql-logo.is--entered {
   animation: logo-appear 0.5s ease-in 2.5s;
   animation-fill-mode: forwards;
 }
 
 #svg {
-  top: 235%;
+  top: 310%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   opacity: 0;
   animation: appear.5s ease-in 3s;
   animation-fill-mode: forwards;
+  display: none;
 }
 
-#tekst-container {
-  margin-top: 30vh;
+.flex-container-sem {
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25vh;
+}
+
+#tekst-container-sem {
+  margin-top: 10vh;
   margin-bottom: 25vh;
   margin-left: auto;
   margin-right: auto;
   width: 35vw;
   height: 30vh;
+  text-align: center;
+}
+
+#foto-sem {
+  width: 386px;
+  height: 515px;
+  margin: 0 10rem 5rem 0;
 }
 
 #tekst-container p,
@@ -429,8 +440,9 @@ footer {
 }
 
 @media screen and (max-width: 1300px) {
-  header {
-    width: 60%;
+  #tekst-wrapper-ties {
+    width: 300px;
+    margin: 9rem 15rem 0 0;
   }
   .footer-container ul li {
     padding-left: 0px;
@@ -438,11 +450,29 @@ footer {
 }
 
 @media screen and (max-width: 1060px) {
-  nav {
-    width: 100%;
+  header {
+    display: none;
+  }
+  #hamburger-knop {
+    display: inline-block;
+  }
+  #tekst-wrapper-ties {
+    margin: auto;
+    margin-top: 9rem;
   }
   #python-logo {
     margin-top: 0em;
+  }
+  .flex-container-sem {
+    flex-direction: column;
+  }
+  #tekst-container-sem {
+    order: 2;
+  }
+  #foto-sem {
+    align-self: center;
+    margin: 0 0 0 0.7rem;
+    order: 1;
   }
   .footer-container ul li {
     font-size: large;
@@ -454,8 +484,19 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  header {
-    width: 70%;
+  .flex-container-ties {
+    flex-direction: column;
+  }
+  #foto-ties {
+    align-self: center;
+    margin: 5rem 0 0 0;
+  }
+  #tekst-wrapper-ties {
+    margin: 3rem 0 5rem 0;
+    align-self: center;
+  }
+  svg {
+    display: none;
   }
   #js-logo {
     margin-top: 0em;
@@ -497,23 +538,31 @@ footer {
 }
 
 @media screen and (max-width: 710px) {
-  #hamburger-knop {
-    display: inline-block;
-  }
-  header {
-    display: none;
-  }
   #tekst {
     width: 90vw;
     height: 100vh;
     margin-left: 0;
     margin-right: 0;
   }
+  .banner-wrapper h1 {
+    font-size: 48px;
+  }
+  #foto-sem {
+    width: 257px;
+    height: 343px;
+  }
+  #tekst-container-sem {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 520px) {
   #tekst-container {
     text-align: center;
+  }
+  #foto-ties {
+    width: 253px;
+    height: 193px;
   }
   #svg {
     top: 210%;

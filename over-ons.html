@@ -16,11 +16,30 @@
       href="https://fonts.googleapis.com/css2?family=Antonio&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/over-ons.css" />
     <title>Over Ons - Ties Hoenderdos</title>
+
+    <script>
+      $(document).ready(function () {
+        var inview = new Waypoint.Inview({
+          element: $(".flex-container")[0],
+          enter: function (direction) {
+            $("#html-logo").addClass("is--entered");
+            $("#css-logo").addClass("is--entered");
+            $("#js-logo").addClass("is--entered");
+            $("#python-logo").addClass("is--entered");
+            $("#wp-logo").addClass("is--entered");
+            $("#sql-logo").addClass("is--entered");
+          },
+        });
+      });
+    </script>
   </head>
   <body>
     <button id="hamburger-knop" onclick="showFunction()">☰</button>
@@ -72,16 +91,24 @@
           ></path>
         </g>
       </svg>
-
-
-      <div class="flex-container-fotos">
-        <div id="foto-sem" class="foto-over"></div>
-        <div id="tekst-container-sem" class="tekst-container-over"></div>
-        <div id="foto-ties" class="foto-over">
-          <h3>Over Sem</h3>
-        </div>
-        <div id="tekst-container-ties" class="tekst-container-over">
-          <h3>Over Ties</h3>
+      <div id="ties-top"></div>
+      <div class="flex-container-ties">
+        <img src="img/Ties.jpg" alt="Over Ons Ties Hoenderdos" id="foto-ties" />
+        <div id="tekst-wrapper-ties">
+          <h2>Ties Hoenderdos</h2>
+          <h3>(Full-Stack) web-developer</h3>
+          <p>
+            Voor zover ik mij kan herinneren ben ik in een ding uitermate
+            geïnteresseerd, dat is alles wat te maken heeft met computers. Toen
+            ik twaalf was besloot ik om een HTML / CSS cursus te volgen en dit
+            vond ik zo leuk dat ik vanaf hier door ben gegaan met het
+            ontwikkelen van mijn web skills, ondertussen weet ik af van de
+            nieuwste ontwikkelingen rondom de wereld van web-development en kan
+            ik jou fantastisch helpen met uitwerken van jouw droomwebsite. Ik ga
+            op dit moment naar 6VWO en ik ben werkzaam bij VanOns, dit is een
+            bedrijf dat webistes maakt.
+          </p>
+          <h3 id="vaardigheden-txt">Mijn vaardigheden \/</h3>
         </div>
       </div>
 
@@ -119,22 +146,25 @@
           ></path>
         </g>
       </svg>
-      <div id="tekst-top"></div>
-      <div id="tekst-container" class="flex-container-fotos">
-        <h2>LIPSUM</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book. It has survived not
-          only five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s
-          with the release of Letraset sheets containing Lorem Ipsum passages,
-          and more recently with desktop publishing software like Aldus
-          PageMaker including versions of Lorem Ipsum.
-        </p>
+      <div id="sem-top"></div>
+      <div class="flex-container-sem">
+        <div id="tekst-container-sem">
+          <h2>Sem Pas</h2>
+          <h3>UI / UX Designer</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+        <img src="img/sem-goed.jpeg" alt="Sem Pas Over Ons" id="foto-sem" />
       </div>
-
     </main>
     <footer>
       <div class="footer-container">
@@ -169,34 +199,39 @@
     </footer>
   </body>
   <script>
-    var tweedeElementOverOns = document.querySelector(".flex-container-fotos");
+    var tweedeElementOverOns = document.querySelector(".flex-container-ties");
     var witNavOverOns = tweedeElementOverOns.offsetTop;
 
     window.onscroll = function () {
-      scrollFunction() 
+      scrollFunction();
     };
-
 
     function scrollFunction() {
       if (window.pageYOffset >= witNavOverOns) {
         document.getElementById("header").style.width = "60%";
+        document.getElementById("header").style.backgroundColor = "#fff";
+        document.getElementById("header").style.borderRadius = "0.3rem";
+        document.querySelector("nav").style.width = "90%";
         document.getElementById("h1-nav").style.color = "black";
         document.getElementById("projecten").style.color = "black";
         document.getElementById("prijzen").style.color = "black";
         document.getElementById("contact").style.color = "black";
       } else {
         document.getElementById("header").style.width = "100%";
+        document.getElementById("header").style.backgroundColor =
+          "rgb(30, 30, 30)";
+        document.getElementById("header").style.borderRadius = "0";
+        document.querySelector("nav").style.width = "50%";
         document.getElementById("h1-nav").style.color = "white";
         document.getElementById("projecten").style.color = "white";
         document.getElementById("prijzen").style.color = "white";
         document.getElementById("contact").style.color = "white";
       }
     }
-
   </script>
   <script>
-    $("#svg-above").on("click", function(e) {
-      var id = $(".flex-container-fotos");
+    $("#svg-above").on("click", function (e) {
+      var id = $("#ties-top");
       $("html, body").animate(
         {
           scrollTop: $(id).offset().top,
@@ -205,7 +240,7 @@
       );
     });
     $("#svg").on("click", function (e) {
-      var idName = $("#tekst-top");
+      var idName = $("#sem-top");
       $("html, body").animate(
         {
           scrollTop: $(idName).offset().top,
