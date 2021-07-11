@@ -154,7 +154,7 @@ main {
   font-size: 72px;
   color: #fff;
   opacity: 0;
-  animation: fade-in 3s ease-in;
+  animation: fade-in 2s ease-in;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
@@ -167,8 +167,10 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  width: 20px;
+  height: 20px;
   opacity: 0;
-  animation: fade-in 2s ease-in 2s;
+  animation: fade-in 2s ease-in 1s;
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
@@ -211,8 +213,13 @@ main {
 
 h2,
 h3,
-p {
+p,
+span {
   font-family: "Rubik", sans-serif;
+}
+
+span {
+  font-size: 26px;
 }
 
 #vaardigheden-txt {
@@ -262,7 +269,7 @@ p {
 }
 
 #wp-logo {
-  background-image: url("http://www.pngall.com/wp-content/uploads/2016/05/WordPress-Logo-PNG-Pic.png");
+  background-image: url("../img/wp-logo.png");
 }
 
 #sql-logo {
