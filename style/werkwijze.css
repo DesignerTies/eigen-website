@@ -308,8 +308,10 @@ button:hover {
 
 .board {
   padding: 1em;
-  border-radius: 10%;
+  border-radius: 5%;
   box-shadow: 20px 20px 80px #bbbbbb;
+  width: 600px;
+  height: 450px;
 }
 
 .title-fase {
@@ -332,9 +334,7 @@ button:hover {
 }
 
 #board-1 {
-  width: 650px;
-  height: 450px;
-  background-color: #4979b8;
+  background-color: whitesmoke;
   align-self: flex-start;
 }
 
@@ -344,10 +344,17 @@ button:hover {
   margin-right: 12em;
 }
 
+.straight-dotted-line {
+  display: none;
+  margin-top: 2em;
+  margin-bottom: 0;
+  width: 180px;
+  height: 140px;
+  transform: rotate(90deg);
+}
+
 #board-2 {
-  width: 650px;
-  height: 450px;
-  background-color: #4979b8;
+  background-color: whitesmoke;
   align-self: flex-end;
 }
 
@@ -359,10 +366,8 @@ button:hover {
 }
 
 #board-3 {
-  width: 650px;
-  height: 450px;
   margin-top: 1em;
-  background-color: #4979b8;
+  background-color: whitesmoke;
   align-self: flex-start;
 }
 
@@ -375,10 +380,18 @@ button:hover {
 }
 
 #board-4 {
-  width: 650px;
-  height: 450px;
-  background-color: #4979b8;
+  background-color: whitesmoke;
   align-self: flex-end;
+}
+
+.tarief-tekst-wrapper {
+  width: 50vw;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.tarief-tekst-wrapper h2 {
+  margin-bottom: 1em;
 }
 
 footer {
@@ -462,28 +475,137 @@ footer {
   nav {
     width: 70%;
   }
+  .footer-container ul li {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
   nav {
-    width: 80%;
+    width: 90%;
+  }
+  nav a {
+    font-size: smaller;
+  }
+  .footer-container ul li {
+    font-size: large;
+  }
+  .github-footer,
+  .insta-footer {
+    margin-left: 10vw;
   }
 }
 
 @media screen and (max-width: 850px) {
-  nav {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 710px) {
   #hamburger-knop {
     display: inline-block;
   }
   header {
     display: none;
   }
+  footer {
+    height: 100vh;
+  }
+  .footer-container {
+    height: 85vh;
+  }
+  .footer-container h2 {
+    display: block;
+  }
+  .footer-container ul {
+    padding-top: 5rem;
+    margin-left: 0;
+  }
+  .footer-container ul li {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+  .form {
+    top: 30%;
+    left: 15%;
+    position: absolute;
+  }
+  .github-footer {
+    margin-top: 73vh;
+    left: 0vw;
+    margin-left: 0;
+  }
+  .insta-footer {
+    margin-top: 73vh;
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .board {
+    width: 430px;
+    height: 300px;
+  }
+  .tekst-wrapper-board {
+    width: 400px;
+  }
+  .title-fase {
+    font-size: 18px;
+  }
+  .board p {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 520px) {
+  #logo {
+    width: 80%;
+  }
+  .werkwijze-board-wrapper {
+    align-items: center;
+    margin-top: 3em;
+    padding: 0;
+  }
+  .board {
+    width: 285px;
+    height: 300px;
+    padding: 0;
+  }
+  .tekst-wrapper-board {
+    width: 250px;
+    padding: 0;
+    margin-top: 0.7em;
+  }
+  .title-fase {
+    margin: 1em;
+  }
+  .tekst-wrapper-board p {
+    margin: 0;
+  }
+  #curved-line-1,
+  #curved-line-2,
+  #curved-line-3 {
+    display: none;
+  }
+  .straight-dotted-line {
+    display: block;
+  }
+  #board-1,
+  #board-2,
+  #board-3,
+  #board-4 {
+    align-self: center;
+    margin: 0;
+  }
+  .board p {
+    font-size: x-small;
+  }
+  footer {
+    height: 115vh;
+  }
+  .footer-container {
+    height: 100vh;
+  }
+  .form {
+    margin-top: 2rem;
+  }
+  .insta-footer,
+  .github-footer {
+    margin-top: 85vh;
+  }
 }
