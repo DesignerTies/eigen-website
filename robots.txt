@@ -1,0 +1,8 @@
+User-agent: Googlebot
+Disallow: 
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tieshoenderdos.nl/sitemap.txt
+Sitemap: https://www.tieshoenderdos.nl/sitempas.txt
