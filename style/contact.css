@@ -55,6 +55,13 @@ nav ul {
   flex: 0.9;
 }
 
+nav a img {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 1em;
+}
+
 nav ul {
   list-style: none;
   display: flex;
