@@ -83,7 +83,7 @@
             stroke-width="2"
           />
         </svg>
-        <h3>(Front-end) Web-developer</h3>
+        <h3>(Full-Stack) Web-developer</h3>
     </div>
     <section>
 	<?php if ( have_posts() ) : ?>
